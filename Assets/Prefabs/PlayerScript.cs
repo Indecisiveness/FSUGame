@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
 
+
 	public string charName;                                        //char name
-	public List<int> charStats = new List<int>(6);                 //empty list
+	public List<int> charStats = new List<int>(7);                 //empty list
 	public List<string> statNames = new List<string>{"study", "work", "social", "health", "sanity", "motivation"};  //stat names
+	public Transcript myTrans;
+	public string myMajor;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +20,7 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	public void StayAlive () {
-		DontDestroyOnLoad (gameObject);
+		DontDestroyOnLoad (this);
+		myMajor = myTrans.MajorName;
 	}
 }

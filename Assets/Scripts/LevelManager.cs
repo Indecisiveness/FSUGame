@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 public class LevelManager : MonoBehaviour {
-
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +16,9 @@ public class LevelManager : MonoBehaviour {
 
 	public void buttonRedirect(string s){
 
-		Debug.Log ("Button Clicked");
+		Debug.Log ("Button Clicked: " + s);
 		SceneManager.LoadScene(s);
 	}
+
 
 }
