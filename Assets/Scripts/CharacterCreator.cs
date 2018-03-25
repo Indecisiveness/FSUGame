@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
 
 
 public class CharacterCreator : MonoBehaviour {
@@ -36,7 +35,6 @@ public class CharacterCreator : MonoBehaviour {
 
 		mainChar.charName = namePicker.text;  //set character object name to the text entered
 
-		//retrieve index of option selected, 0-2, and give the associated stat list
 
 		MajorList AllMajors =Resources.Load<MajorList>("AllMajors");
 
@@ -45,7 +43,7 @@ public class CharacterCreator : MonoBehaviour {
 		Major MyMajor = AllMajors.MyMajors [ThisMajor];
 
 
-		Major MyGenEds = AllMajors.MyMajors.Find(x => x.MajorName == "GenEd");
+		Major MyGenEds = AllMajors.MyMajors.Find(x => x.name == "GenEd");
 
 		mainChar.myTrans = TranscriptBuilder.Create (MyMajor, MyGenEds);
 	

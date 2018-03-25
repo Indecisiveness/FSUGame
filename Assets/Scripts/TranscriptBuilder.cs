@@ -1,21 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class TranscriptBuilder : MonoBehaviour {
 
 
 	public static Transcript Create(Major MyMajor, Major MyGenEds){
-		Transcript myTranscript = ScriptableObject.CreateInstance<Transcript> ();
+		Transcript myTranscript = Resources.Load<Transcript> ("myTranscript");
 
 		myTranscript.genRequired = MyGenEds.genList;
 		myTranscript.genRequired.AddRange(MyMajor.genList);
 		myTranscript.coursesRequired = MyMajor.courseList;
-		myTranscript.MajorName = MyMajor.MajorName;
+		myTranscript.MajorName = MyMajor.name;
 
-		AssetDatabase.CreateAsset (myTranscript, "Assets/myTranscript.asset");
-		AssetDatabase.SaveAssets();
 		return myTranscript;
 	}
 

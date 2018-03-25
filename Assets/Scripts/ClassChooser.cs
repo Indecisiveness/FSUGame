@@ -7,6 +7,12 @@ public class ClassChooser : MonoBehaviour {
 
 	public Dropdown RequirementSelector;
 
+	public Dropdown MySelf;
+
+	public List<Course> PickedCourses;
+
+	public Course SelectedCourse;
+
 	public bool CourseChosen;
 
 	// Use this for initialization
@@ -36,14 +42,16 @@ public class ClassChooser : MonoBehaviour {
 		{
 		
 			ThisDropdown.ClearOptions ();
+			PickedCourses = new List<Course>();
 
-			List<string> MyCourses = new List<string> { "Select a Course" };
+			List<string> MyCourses = new List<string> {"Select a Course"};
 
 			if (MyValue < myTranscript.coursesRequired.Count) 
 			{
 				if (myTranscript.coursesRequired[MyValue].CanTake(myTranscript.coursesTaken))
 				{
-					MyCourses.Add(myTranscript.coursesRequired[MyValue].courseName);
+					MyCourses.Add(myTranscript.coursesRequired[MyValue].name);
+					PickedCourses.Add (myTranscript.coursesRequired[MyValue]);
 
 				}
 					ThisDropdown.AddOptions (MyCourses);
@@ -54,7 +62,8 @@ public class ClassChooser : MonoBehaviour {
 						List<Course> MyCourseList = myTranscript.genRequired[MyValue-myTranscript.coursesRequired.Count].availCourse;
 						MyCourseList.ForEach ( x => {
 							if (x.CanTake(myTranscript.coursesTaken)){
-								MyCourses.Add(x.courseName);
+								MyCourses.Add(x.name);
+						PickedCourses.Add(x);
 							}
 						}
 						);
@@ -65,6 +74,9 @@ public class ClassChooser : MonoBehaviour {
 	}
 
 	public void CourseChose(){
-		CourseChosen = true;
+		if (MySelf.value > 0) {
+			SelectedCourse = PickedCourses [MySelf.value - 1];
+			CourseChosen = true;
+		}
 	}
 }

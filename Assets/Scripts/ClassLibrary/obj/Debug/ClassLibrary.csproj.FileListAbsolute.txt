@@ -1,5 +1,0 @@
-C:\Users\Max-Laptop\Desktop\Unity\FSUGame\ClassLibrary\bin\Debug\ClassLibrary.dll
-C:\Users\Max-Laptop\Desktop\Unity\FSUGame\ClassLibrary\bin\Debug\ClassLibrary.pdb
-C:\Users\Max-Laptop\Desktop\Unity\FSUGame\ClassLibrary\obj\Debug\ClassLibrary.dll
-C:\Users\Max-Laptop\Desktop\Unity\FSUGame\ClassLibrary\obj\Debug\ClassLibrary.pdb
-C:\Users\Max-Laptop\Desktop\Unity\FSUGame\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
