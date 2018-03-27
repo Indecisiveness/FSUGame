@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnimateScript.cs" />
+     <Compile Include="Assets\DisableSpaceBar.cs" />
      <Compile Include="Assets\Prefabs\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\CalendarTestUtil.cs" />
      <Compile Include="Assets\Scripts\Card.cs" />
@@ -67,6 +69,8 @@
      <Compile Include="Assets\Scripts\Month.cs" />
      <Compile Include="Assets\Scripts\Semester.cs" />
      <Compile Include="Assets\Scripts\SemesterStart.cs" />
+     <Compile Include="Assets\Scripts\StatsDisplay.cs" />
+     <Compile Include="Assets\Scripts\StatsManager.cs" />
      <Compile Include="Assets\Scripts\TimeManager.cs" />
      <Compile Include="Assets\Scripts\TimeSlider.cs" />
      <Compile Include="Assets\Scripts\TotalSlider.cs" />
