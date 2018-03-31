@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Card.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelManager.cs">
     <Files>
       <File FileName="Assets\Scripts\SemesterStart.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DropdownPopulator.cs" Line="1" Column="1" />
@@ -9,7 +9,8 @@
       <File FileName="Assets\Scripts\TranscriptBuilder.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CharacterCreator.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GenReq.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Card.cs" Line="15" Column="48" />
+      <File FileName="Assets\Scripts\Card.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

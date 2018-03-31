@@ -67,6 +67,8 @@
      <Compile Include="Assets\Scripts\MajorList.cs" />
      <Compile Include="Assets\Scripts\MajorPicker.cs" />
      <Compile Include="Assets\Scripts\Month.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\Semester.cs" />
      <Compile Include="Assets\Scripts\SemesterStart.cs" />
      <Compile Include="Assets\Scripts\StatsDisplay.cs" />
@@ -76,6 +78,7 @@
      <Compile Include="Assets\Scripts\TotalSlider.cs" />
      <Compile Include="Assets\Scripts\Transcript.cs" />
      <Compile Include="Assets\Scripts\TranscriptBuilder.cs" />
+     <Compile Include="Assets\Scripts\Wait.cs" />
      <Compile Include="Assets\Scripts\Week.cs" />
      <Compile Include="Assets\Scripts\WeekSlider.cs" />
  <Reference Include="UnityEngine.UI">
