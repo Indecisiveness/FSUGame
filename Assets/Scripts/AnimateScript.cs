@@ -34,13 +34,6 @@ public class AnimateScript : MonoBehaviour
 
     public void MoveToNextDay()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            Vector3 position = this.transform.position;
-            position.x -= pixelsPerMoveX;
-            this.transform.position = position;
-        }
-
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             //If player has reached end of month, next month is loaded on next move
