@@ -20,5 +20,10 @@ public class LevelManager : MonoBehaviour {
 		SceneManager.LoadScene(s);
 	}
 
+    public void transcriptRedirect()
+    {
+        SceneManager.LoadScene(GlobalVariables.scene);
+    }
+
 
 }

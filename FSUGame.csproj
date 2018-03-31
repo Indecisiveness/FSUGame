@@ -100,6 +100,8 @@
     <Compile Include="Assets\Scripts\DropdownPopulator.cs" />
     <Compile Include="Assets\Scripts\GenReq.cs" />
     <Compile Include="Assets\Scripts\GenReqList.cs" />
+    <Compile Include="Assets\Scripts\GlobVarTestScript.cs" />
+    <Compile Include="Assets\Scripts\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\HelpPanelScript.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Major.cs" />

@@ -9,6 +9,7 @@ public class AnimateScript : MonoBehaviour
     public float startDay;
     public float endX;
     public string scene;
+    public string transcriptReturnScene;
     private float pixelsPerMoveX = 183;
     private float pixelsPerMoveY = 116;
 
@@ -20,10 +21,22 @@ public class AnimateScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //Places character in proper position in gameboard
+        GlobalVariables.scene = transcriptReturnScene;
+
+        GlobalVariables.characterPosition.x = GlobalVariables.xCharacterPosition;
+        GlobalVariables.characterPosition.y = GlobalVariables.yCharacterPosition;
+
         Vector3 position = this.transform.position;
-        position.x += (startDay - 1) * pixelsPerMoveX;
+        position.x = GlobalVariables.xCharacterPosition;
+        position.y = GlobalVariables.yCharacterPosition;
         this.transform.position = position;
+
+        //Places character in proper position in gameboard
+        //Vector3 position = this.transform.position;
+        //position.x += (startDay - 1) * pixelsPerMoveX;
+        //this.transform.position = position;
+
+
     }
 
     // Update is called once per frame
@@ -39,6 +52,8 @@ public class AnimateScript : MonoBehaviour
             //If player has reached end of month, next month is loaded on next move
             if (this.transform.position.x > endX && this.transform.position.y < 59)
             {
+                GlobalVariables.xCharacterPosition = 91.46f;
+                GlobalVariables.yCharacterPosition = 522f;
                 SceneManager.LoadScene(scene, LoadSceneMode.Single);
             }
 
@@ -50,7 +65,14 @@ public class AnimateScript : MonoBehaviour
                 position.y -= pixelsPerMoveY;
                 this.transform.position = position;
 
-                //SceneManager.LoadScene("WeekSelect");
+                Debug.Log(this.transform.position.x.ToString());
+                Debug.Log(this.transform.position.y.ToString());
+
+                GlobalVariables.xCharacterPosition = this.transform.position.x;
+                GlobalVariables.yCharacterPosition = this.transform.position.y;
+
+
+                SceneManager.LoadScene("WeekSelect");
             }
 
             //Move player to next day
