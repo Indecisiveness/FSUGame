@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/CourseSelect.unity
+- path: Assets/Scenes/SemesterComplete.unity
   isLoaded: 1
   isActive: 1
