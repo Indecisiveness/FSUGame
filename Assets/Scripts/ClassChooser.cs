@@ -27,6 +27,7 @@ public class ClassChooser : MonoBehaviour {
 		
 	}
 
+    
 	public void PopulateCourses(){
 
 
@@ -79,4 +80,6 @@ public class ClassChooser : MonoBehaviour {
 			CourseChosen = true;
 		}
 	}
+    
+     
 }
