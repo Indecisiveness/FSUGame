@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SemesterEnd.unity
+- path: Assets/Scenes/CardDisplay.unity
   isLoaded: 1
   isActive: 1
