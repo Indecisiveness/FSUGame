@@ -8,8 +8,7 @@ public class PlayerScript : MonoBehaviour {
 
 	public string charName;                                 //char name
 	public List<int> charStats = new List<int>(7);          //empty list
-                                                            //List<string> statNames = new List<string>{"study", "work", "social", "health", "sanity", "motivation","finance"};  //stat names
-    public double gpa = 4.0;
+  //List<string> statNames = new List<string>{"study", "work", "social", "health", "sanity", "motivation","finance"};  //stat names
 
     public Transcript myTrans;
 	public string myMajor;
@@ -18,6 +17,13 @@ public class PlayerScript : MonoBehaviour {
 
     public int saveDayBox = 0;
     public int saveMonth = 1;
+
+
+	public float timeStudy = 0;
+	public float timeSocial = 0;
+	public float timeWork = 0;
+
+
     static PlayerScript instance = null;
 
 	// Use this for initialization

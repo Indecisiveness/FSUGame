@@ -35,7 +35,7 @@ public class CharStats : MonoBehaviour{
 
     public void setStatsJoe() //Stats method for Joe Character
     {
-		StatValues.AddRange(new int[] {1,1,1,1,1,1,1});
+		StatValues = new List<int>{1,1,1,1,1,1,1};
 
         displayStats();    
 
@@ -44,7 +44,7 @@ public class CharStats : MonoBehaviour{
 
     public void setStatsJock() //Stats method for Jock character
     {
-		StatValues.AddRange(new int[] {0,0,3,3,0,0,1});
+		StatValues = new List<int>{0,0,3,3,0,0,1};
 
         displayStats();
 
@@ -53,7 +53,7 @@ public class CharStats : MonoBehaviour{
 
     public void setStatsNerd()
     {
-		StatValues.AddRange(new int[] {0,3,0,0,0,3,1});
+		StatValues = new List<int>{0,3,0,0,0,3,1};
 
         displayStats();
 

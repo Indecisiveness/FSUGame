@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class TimeManager : MonoBehaviour {
 	
@@ -12,6 +14,9 @@ public class TimeManager : MonoBehaviour {
 	private float defaultTime = 33;
 	private float maxTime = 100;
 	private float totalTime;
+
+	GameObject player;
+	PlayerScript playerScript;
 
 	void Start () {
 
@@ -30,7 +35,9 @@ public class TimeManager : MonoBehaviour {
 		workTimeSlider.timeSliderLowText.text = "Lazy Bones";
 		workTimeSlider.timeSliderHighText.text = "Industrious";
 		workTimeSlider.timeSlider.value = defaultTime;
-		
+	
+		player = GameObject.FindGameObjectWithTag("Player");
+		playerScript = player.GetComponent<PlayerScript>();
 	}
 	
 	void Update () {
@@ -41,4 +48,15 @@ public class TimeManager : MonoBehaviour {
 		workTimeSlider.availableTime = maxTime - (studyTimeSlider.timeSlider.value + socialTimeSlider.timeSlider.value);
 		totalTimeSlider.availableTime = maxTime;
 	}
+
+public void toGameboard()
+{
+		playerScript.timeStudy = studyTimeSlider.timeSlider.value;
+		playerScript.timeWork = workTimeSlider.timeSlider.value;
+		playerScript.timeSocial = socialTimeSlider.timeSlider.value;
+
+		SceneManager.LoadScene ("Gameboard");
+
+}
+
 }

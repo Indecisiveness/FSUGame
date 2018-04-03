@@ -13,6 +13,13 @@ public class TranscriptBuilder : MonoBehaviour {
 		myTranscript.coursesRequired = MyMajor.courseList;
 		myTranscript.MajorName = MyMajor.name;
 
+		myTranscript.coursesAttempted = 0;
+		myTranscript.CoursesInProgress = new List<Course>();
+		myTranscript.coursesTaken = new List<Course>();
+		myTranscript.gpa = 0;
+		myTranscript.GradesInProgress = new List<float>();
+		myTranscript.readyForGrad = false;
+
 		return myTranscript;
 	}
 

@@ -14,6 +14,7 @@ public class SemesterStart : MonoBehaviour {
 		GameObject MyPlayer = GameObject.Find ("Player1");
 
 		Transcript MyScript = Resources.Load<Transcript>("myTranscript");
+		MyScript.CoursesInProgress = new List<Course>();
 
 		myCourses.ForEach (x => {
 			if (x.CourseChosen) {

@@ -1,0 +1,88 @@
+Initialize engine version: 5.6.5f1 (2cac56bf7bb6)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   23.21.13.9101
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.087 seconds
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.445127 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.097754 ms
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 526.
+Total: 0.684125 ms (FindLiveObjects: 0.020056 ms CreateObjectMapping: 0.061264 ms MarkObjects: 0.388375 ms  DeleteObjects: 0.214427 ms)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Character Created
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: CourseSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'Help Menu') is missing!
+ 
+(Filename:  Line: 1744)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.180444 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 615.
+Total: 0.409162 ms (FindLiveObjects: 0.030632 ms CreateObjectMapping: 0.019327 ms MarkObjects: 0.340239 ms  DeleteObjects: 0.018233 ms)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: WeekSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.526586 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 480.
+Total: 0.334404 ms (FindLiveObjects: 0.025891 ms CreateObjectMapping: 0.012763 ms MarkObjects: 0.281891 ms  DeleteObjects: 0.013128 ms)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.623589 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 338.
+Total: 0.246883 ms (FindLiveObjects: 0.039749 ms CreateObjectMapping: 0.012763 ms MarkObjects: 0.181242 ms  DeleteObjects: 0.012763 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 3804 -> priority: 1 
+  Thread -> id: 1ff8 -> priority: 1 
+  Thread -> id: 1330 -> priority: 1 
+  Thread -> id: 4054 -> priority: 1 

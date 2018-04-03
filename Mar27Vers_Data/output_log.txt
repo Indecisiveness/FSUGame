@@ -17,9 +17,138 @@ Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\Mar27Vers_Data\M
 Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\Mar27Vers_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\Mar27Vers_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\Mar27Vers_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.111 seconds
+- Completed reload, in  0.101 seconds
 Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\Mar27Vers_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\Mar27Vers_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.344182 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.014244 ms
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 526.
+Total: 0.541538 ms (FindLiveObjects: 0.021150 ms CreateObjectMapping: 0.012763 ms MarkObjects: 0.274598 ms  DeleteObjects: 0.232296 ms)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Character Created
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: CourseSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'Help Menu') is missing!
+ 
+(Filename:  Line: 1744)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.867555 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 615.
+Total: 0.440159 ms (FindLiveObjects: 0.066735 ms CreateObjectMapping: 0.036831 ms MarkObjects: 0.319817 ms  DeleteObjects: 0.016410 ms)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: WeekSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.594051 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 480.
+Total: 0.300489 ms (FindLiveObjects: 0.026621 ms CreateObjectMapping: 0.012763 ms MarkObjects: 0.246883 ms  DeleteObjects: 0.013857 ms)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.653857 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 514.
+Total: 0.235578 ms (FindLiveObjects: 0.017139 ms CreateObjectMapping: 0.012763 ms MarkObjects: 0.195829 ms  DeleteObjects: 0.009481 ms)
+
+Player1 found and referenced.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+It says zero here dude.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+LevelManager working
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'Transcript' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'Transcript' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'Transcript' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'Transcript' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'Transcript' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+Button Clicked: Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'Transcript' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 140)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: e78 -> priority: 1 
+  Thread -> id: 30d4 -> priority: 1 
+  Thread -> id: 330c -> priority: 1 
+  Thread -> id: 1084 -> priority: 1 
