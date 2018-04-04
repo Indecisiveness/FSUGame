@@ -11,14 +11,15 @@ public class SemesterStart : MonoBehaviour {
 
 
 	public void SemesterBegin (){
-		GameObject MyPlayer = GameObject.Find ("Player1");
 
 		Transcript MyScript = Resources.Load<Transcript>("myTranscript");
 		MyScript.CoursesInProgress = new List<Course>();
+		MyScript.GradesInProgress = new List<float> ();
 
 		myCourses.ForEach (x => {
 			if (x.CourseChosen) {
 				MyScript.CoursesInProgress.Add (x.SelectedCourse);
+				MyScript.GradesInProgress.Add (0);
 			}
 		});
 	}	

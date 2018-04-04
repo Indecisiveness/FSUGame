@@ -16,8 +16,27 @@ public class SceneChanger : MonoBehaviour {
 	}
 
     public void loadScene(string scene) {
+		GameObject myPlayer = GameObject.FindGameObjectWithTag ("Player");
+
+		PlayerScript myScript = myPlayer.GetComponent<PlayerScript> ();
+
+		Scene thisScene = SceneManager.GetActiveScene ();
+
+		myScript.LastScreen = thisScene.name;
+
+
+
         SceneManager.LoadScene(scene);
-    }
+	}
+
+	public void BackScene(){
+		GameObject myPlayer = GameObject.FindGameObjectWithTag ("Player");
+
+		PlayerScript myScript = myPlayer.GetComponent<PlayerScript> ();
+
+		SceneManager.LoadScene (myScript.LastScreen);
+	}
+
 
     public void quit()
     {

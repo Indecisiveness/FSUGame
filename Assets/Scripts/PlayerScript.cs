@@ -13,7 +13,6 @@ public class PlayerScript : MonoBehaviour {
     public Transcript myTrans;
 	public string myMajor;
 
-    
 
     public int saveDayBox = 0;
     public int saveMonth = 1;
@@ -22,6 +21,10 @@ public class PlayerScript : MonoBehaviour {
 	public float timeStudy = 0;
 	public float timeSocial = 0;
 	public float timeWork = 0;
+
+
+	public string LastScreen = "";
+
 
 
     static PlayerScript instance = null;

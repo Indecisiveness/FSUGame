@@ -20,34 +20,15 @@ public class StatsManager : MonoBehaviour {
 	void Start () {
 
 		//the values should be set from characterStats?
-		player1Stats.playerName.text = "Bobo the Player";
-		player1Stats.jobSkills.text = "00";
-		player1Stats.studyHabits.text = "01";
-		player1Stats.socialSkills.text = "02";
-		player1Stats.physicalHealth.text = "03";
-		player1Stats.sanity.text = "04";
-		player1Stats.motivation.text = "05";
-		player1Stats.finances.text = "06";
-		player1Stats.GPA.text = "07";
+	
 		player1Stats.classStanding.text = "Fr.";
 		player1Stats.currentYear.text = "1st";
-		player2Stats.playerName.text = "KoKOMo";
-		player2Stats.GPA.text = "08";
-		player2Stats.classStanding.text = "So.";
-		player2Stats.currentYear.text = "2nd";
-		player3Stats.playerName.text = "Biggie 33";
-		player3Stats.GPA.text = "09";
-		player3Stats.classStanding.text = "Jr.";
-		player3Stats.currentYear.text = "3rd";
-		player4Stats.playerName.text = "Last 4";
-		player4Stats.GPA.text = "10";
-		player4Stats.classStanding.text = "Sr.";
-		player4Stats.currentYear.text = "4th";
+
 
 	//These values need to be set based on number of players during multi-player game
-		p2Joined = true;
-		p3Joined = true;
-		p4Joined = true;
+		p2Joined = false;
+		p3Joined = false;
+		p4Joined = false;
 
 		//call method to set visibility
 		SetPlayerVisibility (p2StatsGroup, p2Joined);

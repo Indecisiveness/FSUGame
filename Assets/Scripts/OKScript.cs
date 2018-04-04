@@ -19,6 +19,10 @@ public class OKScript : MonoBehaviour {
 	}
 
     void OnMouseDown() {
+		
+		Card mycard = card.GetComponent<Card> ();
+
+		mycard.GenerateEffect ();
 
         Destroy(card);
 

@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CalendarTestUtil.cs" />
-     <Compile Include="Assets\Scripts\Card.cs" />
+     <Compile Include="Assets\Scripts\CardScript.cs" />
      <Compile Include="Assets\Scripts\CharStats.cs" />
      <Compile Include="Assets\Scripts\CharacterCreator.cs" />
      <Compile Include="Assets\Scripts\ClassChooser.cs" />
