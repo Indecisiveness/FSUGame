@@ -31,7 +31,7 @@ public class ClassChooser : MonoBehaviour {
 	public void PopulateCourses(){
 
 
-		GameObject Play1 = GameObject.Find ("Player1");
+		GameObject Play1 =  GameObject.FindGameObjectWithTag("Player");
 
 		Transcript myTranscript = (Play1.GetComponent<PlayerScript> ()).myTrans;
 
@@ -39,15 +39,19 @@ public class ClassChooser : MonoBehaviour {
 
 		Dropdown ThisDropdown = gameObject.GetComponent<Dropdown> ();
 
-		if (!CourseChosen)
-		{
-		
-			ThisDropdown.ClearOptions ();
-			PickedCourses = new List<Course>();
+		ThisDropdown.ClearOptions ();
+		PickedCourses = new List<Course>();
 
-			List<string> MyCourses = new List<string> {"Select a Course"};
+		List<string> MyCourses;
 
-			if (MyValue < myTranscript.coursesRequired.Count) 
+		if (!CourseChosen) {
+			MyCourses = new List<string> { "Select a Course" };
+		} 
+		else {
+			MyCourses = new List<string> { SelectedCourse.courseName };
+		}
+
+		if (MyValue < myTranscript.coursesRequired.Count) 
 			{
 				if (myTranscript.coursesRequired[MyValue].CanTake(myTranscript.coursesTaken))
 				{
@@ -59,17 +63,15 @@ public class ClassChooser : MonoBehaviour {
 			}
 
 			
-			else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
-						List<Course> MyCourseList = myTranscript.genRequired[MyValue-myTranscript.coursesRequired.Count].availCourse;
-						MyCourseList.ForEach ( x => {
-							if (x.CanTake(myTranscript.coursesTaken)){
-								MyCourses.Add(x.name);
-						PickedCourses.Add(x);
-							}
+		else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
+				List<Course> MyCourseList = myTranscript.genRequired[MyValue-myTranscript.coursesRequired.Count].availCourse;
+				MyCourseList.ForEach ( x => {
+						if (x.CanTake(myTranscript.coursesTaken)){
+							MyCourses.Add(x.name);
+							PickedCourses.Add(x);
 						}
-						);
+					});
 				ThisDropdown.AddOptions (MyCourses);
-		}
 		}
 
 	}

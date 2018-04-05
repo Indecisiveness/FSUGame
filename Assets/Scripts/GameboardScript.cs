@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameboardScript : MonoBehaviour {
 
+
+    GameObject sceneChanger;
+    SceneChanger sceneChangerScript;
     GameObject player;                                          // Object representing the player
     PlayerScript playerScript;                                  // Object representing the Script attached to the player
     int currentMonth;                                           // The integer value 1-12 of the current month the Gameboard should be displaying
     int startDayBox;                                            // The integer value 1-36 of the position on the calendar the player should start at when screen loads
-    GameObject[] dayBoxArray = new GameObject[38];              // An array that holds all the Day_Box objects
+	List<GameObject> dayBoxArray = new List<GameObject>();              // An array that holds all the Day_Box objects
     int currentDayBox;                                          // The current DayBox location of Player 1
 
     bool acMarker;                                              // represents if the Academic card marker is active when the player enters the day
@@ -26,14 +29,20 @@ public class GameboardScript : MonoBehaviour {
        
         playerScript = player.GetComponent<PlayerScript>();
 
-        Debug.Log("Player1 found and referenced.");                     
-                                                    
-        
-                                                          
-        for (int i = 1; i < 38; i++)                                        // populate an array with all DayBox objects alive in the scene
+        Debug.Log("Player1 found and referenced.");
+
+        player.GetComponent<SpriteRenderer>().color = new Vector4(235, 235, 235, 255);
+
+        sceneChanger = GameObject.FindGameObjectWithTag("SceneChanger");
+        sceneChangerScript = sceneChanger.GetComponent<SceneChanger>();
+		Debug.Log ("FoundSceneChanger");
+
+
+
+        for (int i = 1; i < 43; i++)                                        // populate an array with all DayBox objects alive in the scene
         {
-            dayBoxArray[i] = GameObject.Find("Day_"+i.ToString());
-            //Debug.Log("Day_" + i.ToString() + " referenced!");
+			dayBoxArray.Add( GameObject.Find("Day_"+i.ToString()));
+            Debug.Log("Day_" + i.ToString() + " referenced!");
         }
 
         if (playerScript.saveDayBox == 0)                                   // pick the position of the player at initialization
@@ -60,7 +69,7 @@ public class GameboardScript : MonoBehaviour {
         wcCardsArray = Resources.LoadAll<GameObject>("WC") as GameObject[];
 
 
-
+		RollWeek ();
 
     }
 	
@@ -88,85 +97,97 @@ public class GameboardScript : MonoBehaviour {
         else if (currentMonth == 11) { startDayBox = 3; }
         else if (currentMonth == 12) { startDayBox = 6; }
 
-        currentDayBox = startDayBox;
+
+
+       
+
+		currentDayBox = startDayBox;
+
         player.transform.position = dayBoxArray[currentDayBox].transform.position;        
         playerScript.saveDayBox = currentDayBox;
         
+		RollWeek ();
+
     }
 
     /** This method moves the character one day at a time, and each time checks if it is a new week or a new month.
      *  The method is called by the NEXT DAY button, which was created in the Unity Editor, so a reference was dragged in manually, not in code
      **/
     public void nextDay() {
-
-        currentDayBox += 1;
-        player.transform.position = dayBoxArray[currentDayBox].transform.position;        
-        playerScript.saveDayBox = currentDayBox;
-        whichMarkers();
-        isNewWeek();
-        nextMonth();
-        
+		Day today = dayBoxArray [currentDayBox].GetComponent<Day>();
+		if (today.HasAC || today.HasSC || today.HasWC) {
+			today.DrawCard ();
+		}
+		else {
+			currentDayBox += 1;
+			player.transform.position = dayBoxArray [currentDayBox].transform.position;        
+			playerScript.saveDayBox = currentDayBox;
+			whichMarkers ();
+			isNewWeek ();
+			nextMonth ();
+		}
     }
 
     /** This method checks if it is a new month. If so, the current month is made inactive, and the following month is activated. This works
      * because all calendars occupy the same game space.
      **/
     void nextMonth() {
-        if (currentMonth == 1 && currentDayBox == 33) {
+        if (currentMonth == 1 && currentDayBox == 32) {
             destroyCalendar();
            
         }
-        else if (currentMonth == 2 && currentDayBox == 36)
+        else if (currentMonth == 2 && currentDayBox == 35)
+        {
+            destroyCalendar();
+            launchWeekSelectionScreen();
+            
+        }
+        else if (currentMonth == 3 && currentDayBox == 30)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 3 && currentDayBox == 31)
-        {
-            destroyCalendar();
-            
-        }
-        else if (currentMonth == 4 && currentDayBox == 34)
+        else if (currentMonth == 4 && currentDayBox == 33)
         {
             destroyCalendar();
             launchSemesterEndScreen();
         }
-        else if (currentMonth == 5 && currentDayBox == 37)
+        else if (currentMonth == 5 && currentDayBox == 36)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 6 && currentDayBox == 30)
+        else if (currentMonth == 6 && currentDayBox == 29)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 7 && currentDayBox == 32)
+        else if (currentMonth == 7 && currentDayBox == 31)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 8 && currentDayBox == 34)
+        else if (currentMonth == 8 && currentDayBox == 33)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 9 && currentDayBox == 37)
+        else if (currentMonth == 9 && currentDayBox == 36)
         {
             destroyCalendar();
             launchSemesterEndScreen();
         }
-        else if (currentMonth == 10 && currentDayBox == 31)
+        else if (currentMonth == 10 && currentDayBox == 30)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 11 && currentDayBox == 34)
+        else if (currentMonth == 11 && currentDayBox == 33)
         {
             destroyCalendar();
             
         }
-        else if (currentMonth == 12 && currentDayBox == 36)
+        else if (currentMonth == 12 && currentDayBox == 35)
         {
             destroyCalendar();
             launchSemesterEndScreen();
@@ -178,10 +199,57 @@ public class GameboardScript : MonoBehaviour {
     void isNewWeek() {
         if (currentDayBox == 1 || currentDayBox == 8 || currentDayBox == 15 || currentDayBox == 22 || currentDayBox == 29)
         {
+			
             launchWeekSelectionScreen();
 
         }
     }
+
+	void RollWeek(){
+		int DaysLeft = 7 - ((currentDayBox - 1) % 7);
+
+
+		List<GameObject> ThisWeek = dayBoxArray.GetRange (currentDayBox, DaysLeft);
+
+		ThisWeek.ForEach( x =>  {
+			Day myDay = x.GetComponent<Day>();
+			double AC = Random.value;
+			if (AC> .86){
+				myDay.HasAC = true;
+				myDay.ACMark.SetActive(true);
+			}
+			double SC = Random.value;
+			if (SC> .86){
+				myDay.HasSC = true;
+				myDay.SCMark.SetActive(true);
+			}
+			double WC = Random.value;
+			if (WC> .86){
+				myDay.HasWC = true;
+				myDay.WCMark.SetActive(true);
+			}
+			myDay.WeekStart();
+		});
+	}
+				
+	void ReplaceWeek(int LastDay, int nextDay){
+		int DaysLeft = 7 - ((nextDay - 1) % 7);
+
+		int i = 0;
+
+		for (;DaysLeft > 0; DaysLeft--)
+		{
+			GameObject oldGroup = dayBoxArray [nextDay + i].transform.Find ("MarkerGroup").gameObject;
+			oldGroup = dayBoxArray[LastDay+i].transform.Find("MarkerGroup").gameObject;
+			Day toClear = dayBoxArray[LastDay+i].GetComponent<Day>();
+			toClear.HasAC = false;
+			toClear.HasSC = false;
+			toClear.HasWC = false;
+			i++;
+		}
+		}
+			
+
 
     /** This method is the logic of deactivating a current calendar and activating the following one. It deactivates the nth # child of
      *  the object this script is attached to, and activates the one after it 
@@ -192,28 +260,35 @@ public class GameboardScript : MonoBehaviour {
         currentMonth += 1;
         playerScript.saveMonth = currentMonth;
         pickStartDayBox();
-        
+
+
     }
 
     /** Changes to the Status Screen
      **/
-    void launchStatusScreen(){
+    public void launchStatusScreen(){
         player.GetComponent<SpriteRenderer>().color = new Vector4(0,0,0,0);
-        SceneManager.LoadScene("Status");
+        sceneChangerScript.loadScene("Status");
+    }
+
+    public void launchTranscriptScreen()
+    {
+        player.GetComponent<SpriteRenderer>().color = new Vector4(0, 0, 0, 0);
+        sceneChangerScript.loadScene("Transcript");
     }
 
     /** Changes to the WeekSelection Screen
      **/
-    void launchWeekSelectionScreen() {
+    public void launchWeekSelectionScreen() {
         player.GetComponent<SpriteRenderer>().color = new Vector4(0, 0, 0, 0);
-        SceneManager.LoadScene("WeekSelect");
+        sceneChangerScript.loadScene("WeekSelect");
     }
 
     /** Changes to the Semester End Screen
      **/
-    void launchSemesterEndScreen() {
+    public void launchSemesterEndScreen() {
         player.GetComponent<SpriteRenderer>().color = new Vector4(0, 0, 0, 0);
-        SceneManager.LoadScene("SemesterEnd");
+        sceneChangerScript.loadScene("SemesterEnd");
     }
 
     /** Detect which markers are on in the current DayBox

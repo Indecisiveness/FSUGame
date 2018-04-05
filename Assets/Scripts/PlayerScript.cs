@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerScript : MonoBehaviour {
@@ -23,7 +24,7 @@ public class PlayerScript : MonoBehaviour {
 	public float timeWork = 0;
 
 
-	public string LastScreen = "";
+	
 
 
 
@@ -58,6 +59,8 @@ public class PlayerScript : MonoBehaviour {
     {
         Debug.Log(collision.otherCollider.gameObject.name);
     }
+
+    
 
     
 }
