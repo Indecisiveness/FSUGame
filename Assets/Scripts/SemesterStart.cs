@@ -19,7 +19,7 @@ public class SemesterStart : MonoBehaviour {
 		myCourses.ForEach (x => {
 			if (x.CourseChosen) {
 				MyScript.CoursesInProgress.Add (x.SelectedCourse);
-				MyScript.GradesInProgress.Add (0);
+				MyScript.GradesInProgress.Add (2f);
 			}
 		});
 	}	

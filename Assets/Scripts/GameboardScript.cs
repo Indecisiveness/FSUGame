@@ -45,7 +45,7 @@ public class GameboardScript : MonoBehaviour {
             Debug.Log("Day_" + i.ToString() + " referenced!");
         }
 
-        if (playerScript.saveDayBox == 0)                                   // pick the position of the player at initialization
+		if (playerScript.saveDayBox == 0 && playerScript.saveMonth == 1)                                   // pick the position of the player at initialization
         {
             Debug.Log("It says zero here dude.");
             currentMonth = 1;
@@ -59,7 +59,7 @@ public class GameboardScript : MonoBehaviour {
             currentDayBox = playerScript.saveDayBox;
             player.transform.position = dayBoxArray[currentDayBox].transform.position;            
             currentMonth = playerScript.saveMonth;
-            this.transform.GetChild(currentMonth-1).gameObject.SetActive(true);
+			this.transform.Find("" + currentMonth).gameObject.SetActive(true);
             player.GetComponent<SpriteRenderer>().color = new Vector4(235, 235, 235, 255);
             whichMarkers();
         }
@@ -84,29 +84,33 @@ public class GameboardScript : MonoBehaviour {
 
     void pickStartDayBox() {
 
-        if (currentMonth == 1) { startDayBox = 3;}
-        else if (currentMonth == 2) { startDayBox = 5; }
-        else if (currentMonth == 3) { startDayBox = 1; }
-        else if (currentMonth == 4) { startDayBox = 3; }
-        else if (currentMonth == 5) { startDayBox = 6; }
-        else if (currentMonth == 6) { startDayBox = 2; }
-        else if (currentMonth == 7) { startDayBox = 2; }
-        else if (currentMonth == 8) { startDayBox = 4; }
-        else if (currentMonth == 9) { startDayBox = 6; }
-        else if (currentMonth == 10) { startDayBox = 2; }
-        else if (currentMonth == 11) { startDayBox = 3; }
-        else if (currentMonth == 12) { startDayBox = 6; }
+        if (currentMonth == 1) { startDayBox = 2;}
+        else if (currentMonth == 2) { startDayBox = 4; }
+        else if (currentMonth == 3) { startDayBox = 0; }
+        else if (currentMonth == 4) { startDayBox = 2; }
+        else if (currentMonth == 5) { startDayBox = 5; }
+        else if (currentMonth == 6) { startDayBox = 1; }
+        else if (currentMonth == 7) { startDayBox = 1; }
+        else if (currentMonth == 8) { startDayBox = 3; }
+        else if (currentMonth == 9) { startDayBox = 5; }
+        else if (currentMonth == 10) { startDayBox = 1; }
+        else if (currentMonth == 11) { startDayBox = 2; }
+        else if (currentMonth == 12) { startDayBox = 5; }
 
 
 
-       
+		int holdDay = currentDayBox;
 
 		currentDayBox = startDayBox;
 
-        player.transform.position = dayBoxArray[currentDayBox].transform.position;        
-        playerScript.saveDayBox = currentDayBox;
-        
-		RollWeek ();
+		player.transform.position = dayBoxArray[currentDayBox].transform.position;        
+		playerScript.saveDayBox = currentDayBox;
+
+		if (currentMonth != 1) {
+			this.ReplaceWeek (holdDay, currentDayBox);
+		}
+
+
 
     }
 
@@ -123,8 +127,8 @@ public class GameboardScript : MonoBehaviour {
 			player.transform.position = dayBoxArray [currentDayBox].transform.position;        
 			playerScript.saveDayBox = currentDayBox;
 			whichMarkers ();
-			isNewWeek ();
 			nextMonth ();
+			isNewWeek ();
 		}
     }
 
@@ -139,7 +143,6 @@ public class GameboardScript : MonoBehaviour {
         else if (currentMonth == 2 && currentDayBox == 35)
         {
             destroyCalendar();
-            launchWeekSelectionScreen();
             
         }
         else if (currentMonth == 3 && currentDayBox == 30)
@@ -192,12 +195,13 @@ public class GameboardScript : MonoBehaviour {
             destroyCalendar();
             launchSemesterEndScreen();
         }
+			
     }
 
     /** This method checks if it is a new week. If so, it takes the player to the weekSelect screen
      **/
     void isNewWeek() {
-        if (currentDayBox == 1 || currentDayBox == 8 || currentDayBox == 15 || currentDayBox == 22 || currentDayBox == 29)
+        if (currentDayBox == 0 || currentDayBox == 7 || currentDayBox == 14 || currentDayBox == 21 || currentDayBox == 28)
         {
 			
             launchWeekSelectionScreen();
@@ -206,45 +210,36 @@ public class GameboardScript : MonoBehaviour {
     }
 
 	void RollWeek(){
-		int DaysLeft = 7 - ((currentDayBox - 1) % 7);
+		int DaysLeft = 7 - ((currentDayBox) % 7);
 
 
 		List<GameObject> ThisWeek = dayBoxArray.GetRange (currentDayBox, DaysLeft);
 
 		ThisWeek.ForEach( x =>  {
 			Day myDay = x.GetComponent<Day>();
-			double AC = Random.value;
-			if (AC> .86){
-				myDay.HasAC = true;
-				myDay.ACMark.SetActive(true);
-			}
-			double SC = Random.value;
-			if (SC> .86){
-				myDay.HasSC = true;
-				myDay.SCMark.SetActive(true);
-			}
-			double WC = Random.value;
-			if (WC> .86){
-				myDay.HasWC = true;
-				myDay.WCMark.SetActive(true);
-			}
 			myDay.WeekStart();
 		});
 	}
 				
 	void ReplaceWeek(int LastDay, int nextDay){
-		int DaysLeft = 7 - ((nextDay - 1) % 7);
+		int DaysLeft = 7 - ((nextDay) % 7);
 
 		int i = 0;
 
 		for (;DaysLeft > 0; DaysLeft--)
 		{
-			GameObject oldGroup = dayBoxArray [nextDay + i].transform.Find ("MarkerGroup").gameObject;
-			oldGroup = dayBoxArray[LastDay+i].transform.Find("MarkerGroup").gameObject;
-			Day toClear = dayBoxArray[LastDay+i].GetComponent<Day>();
-			toClear.HasAC = false;
-			toClear.HasSC = false;
-			toClear.HasWC = false;
+			Day newDay = dayBoxArray [nextDay + i].GetComponent<Day>();
+			Day oldDay = dayBoxArray[LastDay+i].GetComponent<Day>();
+			newDay.HasAC = oldDay.HasAC;
+			newDay.HasSC = oldDay.HasSC;
+			newDay.HasWC = oldDay.HasWC;
+
+			oldDay.HasAC = false;
+			oldDay.HasSC = false;
+			oldDay.HasWC = false;
+			newDay.UpdateMarks();
+			oldDay.UpdateMarks();
+
 			i++;
 		}
 		}
@@ -255,9 +250,9 @@ public class GameboardScript : MonoBehaviour {
      *  the object this script is attached to, and activates the one after it 
      **/
     void destroyCalendar() {
-        this.transform.GetChild(currentMonth-1).gameObject.SetActive(false);
-        this.transform.GetChild(currentMonth).gameObject.SetActive(true);
-        currentMonth += 1;
+		this.transform.Find("" + currentMonth).gameObject.SetActive(false);
+		currentMonth += 1;
+		this.transform.Find("" + currentMonth).gameObject.SetActive(true);
         playerScript.saveMonth = currentMonth;
         pickStartDayBox();
 

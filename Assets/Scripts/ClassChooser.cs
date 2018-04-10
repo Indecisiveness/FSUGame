@@ -49,13 +49,13 @@ public class ClassChooser : MonoBehaviour {
 		} 
 		else {
 			MyCourses = new List<string> { SelectedCourse.courseName };
-		}
+			}
 
 		if (MyValue < myTranscript.coursesRequired.Count) 
 			{
 				if (myTranscript.coursesRequired[MyValue].CanTake(myTranscript.coursesTaken))
 				{
-					MyCourses.Add(myTranscript.coursesRequired[MyValue].name);
+					MyCourses.Add(myTranscript.coursesRequired[MyValue].courseName);
 					PickedCourses.Add (myTranscript.coursesRequired[MyValue]);
 
 				}
@@ -67,11 +67,15 @@ public class ClassChooser : MonoBehaviour {
 				List<Course> MyCourseList = myTranscript.genRequired[MyValue-myTranscript.coursesRequired.Count].availCourse;
 				MyCourseList.ForEach ( x => {
 						if (x.CanTake(myTranscript.coursesTaken)){
-							MyCourses.Add(x.name);
+							MyCourses.Add(x.courseName);
 							PickedCourses.Add(x);
 						}
 					});
-				ThisDropdown.AddOptions (MyCourses);
+			ThisDropdown.AddOptions (MyCourses);
+
+			if (CourseChosen) {
+				ThisDropdown.value = 0;
+			}
 		}
 
 	}

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Gameboard.unity
+- path: Assets/Scenes/CourseSelect.unity
   isLoaded: 1
   isActive: 1

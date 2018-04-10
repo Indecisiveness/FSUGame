@@ -36,16 +36,15 @@ public class CharacterCreator : MonoBehaviour {
 		mainChar.charName = namePicker.text;  //set character object name to the text entered
 
         
-		MajorList AllMajors = Resources.Load<MajorList>("AllMajors");
+		MajorList AllMajors = Resources.Load<MajorList>("myMajorList");
 
 		int ThisMajor = majorChoice.value;
 
 		Major MyMajor = AllMajors.MyMajors [ThisMajor];
 
 
-		Major MyGenEds = AllMajors.MyMajors.Find(x => x.name == "GenEd");
 
-		mainChar.myTrans = TranscriptBuilder.Create (MyMajor, MyGenEds);
+		mainChar.myTrans = TranscriptBuilder.Create (MyMajor);
         
 	
 

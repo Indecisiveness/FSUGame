@@ -18,11 +18,6 @@ public class Day : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		MyGameboard= GetComponentInParent<GameboardScript>();
-		Transform Location = gameObject.transform.Find("MarkerGroup");
-
-		ACMark = Location.Find("AC").gameObject;
-		SCMark = Location.Find("SC").gameObject;	
-		WCMark = Location.Find("WC").gameObject;
 		ACMark.SetActive (false);
 		SCMark.SetActive (false);
 		WCMark.SetActive (false);
@@ -35,17 +30,45 @@ public class Day : MonoBehaviour {
 
 	public void WeekStart(){
 
-		if (HasAC){
-			ACMark.SetActive (true);
+		double AC = Random.value;
+		if (AC> .86){
+			this.HasAC = true;
+			this.ACMark.SetActive(true);
+		}
+		double SC = Random.value;
+		if (SC> .86){
+			this.HasSC = true;
+			this.SCMark.SetActive(true);
+		}
+		double WC = Random.value;
+		if (WC> .86){
+			this.HasWC = true;
+			this.WCMark.SetActive(true);
 		}
 
-		if(HasSC){
-			SCMark.SetActive(true);
+		UpdateMarks ();
+
+	}
+
+	public void UpdateMarks(){
+		if (HasAC) {
+			ACMark.SetActive (true);
+		} else {
+			ACMark.SetActive (false);
+		}
+
+		if (HasSC) {
+			SCMark.SetActive (true);
+		} else {
+			SCMark.SetActive (false);
 		}
 
 		if(HasWC){
 			WCMark.SetActive (true);
+		} else {
+			WCMark.SetActive (false);
 		}
+	
 	}
 
 

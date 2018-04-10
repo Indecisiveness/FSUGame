@@ -17,23 +17,23 @@ Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_D
 Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.104 seconds
+- Completed reload, in  0.481 seconds
 Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Max-Laptop\Documents\GitHub\FSUGame\WithTranscript_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.497936 ms
+UnloadTime: 3.574153 ms
 StartScreen
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.164124 ms
+UnloadTime: 5.016067 ms
 
 Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 526.
-Total: 0.703452 ms (FindLiveObjects: 0.028809 ms CreateObjectMapping: 0.013857 ms MarkObjects: 0.370507 ms  DeleteObjects: 0.289914 ms)
+Total: 0.656045 ms (FindLiveObjects: 0.030997 ms CreateObjectMapping: 0.013857 ms MarkObjects: 0.311065 ms  DeleteObjects: 0.299395 ms)
 
 Character Created
  
@@ -44,26 +44,26 @@ charSelect
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.831817 ms
+UnloadTime: 0.870472 ms
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 618.
-Total: 0.487566 ms (FindLiveObjects: 0.069652 ms CreateObjectMapping: 0.025527 ms MarkObjects: 0.373789 ms  DeleteObjects: 0.018233 ms)
+Total: 0.424843 ms (FindLiveObjects: 0.031361 ms CreateObjectMapping: 0.018598 ms MarkObjects: 0.355555 ms  DeleteObjects: 0.018962 ms)
 
 CourseSelect
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.472979 ms
+UnloadTime: 0.764717 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 473.
-Total: 0.310700 ms (FindLiveObjects: 0.028079 ms CreateObjectMapping: 0.016774 ms MarkObjects: 0.249435 ms  DeleteObjects: 0.016045 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 476.
+Total: 0.374153 ms (FindLiveObjects: 0.038290 ms CreateObjectMapping: 0.014586 ms MarkObjects: 0.307054 ms  DeleteObjects: 0.013492 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.521846 ms
+UnloadTime: 0.618848 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1032.
-Total: 0.288820 ms (FindLiveObjects: 0.063088 ms CreateObjectMapping: 0.019327 ms MarkObjects: 0.195829 ms  DeleteObjects: 0.010575 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1035.
+Total: 0.315076 ms (FindLiveObjects: 0.071111 ms CreateObjectMapping: 0.020421 ms MarkObjects: 0.211509 ms  DeleteObjects: 0.012034 ms)
 
 Player1 found and referenced.
  
@@ -258,11 +258,10 @@ AC : TrueWC : TrueSC : True
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-AC : TrueWC : TrueSC : True
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-IndexOutOfRangeException: Array index is out of range.
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
   at GameboardScript.showRandomAcademic () [0x00000] in <filename unknown>:0 
   at Day.DrawCard () [0x00000] in <filename unknown>:0 
   at GameboardScript.nextDay () [0x00000] in <filename unknown>:0 
@@ -299,21 +298,25 @@ AC : TrueWC : TrueSC : True
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Gameboard
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.683031 ms
+UnloadTime: 0.755601 ms
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 473.
-Total: 0.317994 ms (FindLiveObjects: 0.035008 ms CreateObjectMapping: 0.012763 ms MarkObjects: 0.237766 ms  DeleteObjects: 0.031726 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 476.
+Total: 0.409526 ms (FindLiveObjects: 0.065276 ms CreateObjectMapping: 0.017139 ms MarkObjects: 0.288820 ms  DeleteObjects: 0.037561 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.483190 ms
+UnloadTime: 0.463498 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1032.
-Total: 0.338780 ms (FindLiveObjects: 0.093720 ms CreateObjectMapping: 0.019327 ms MarkObjects: 0.210780 ms  DeleteObjects: 0.014222 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1035.
+Total: 0.271316 ms (FindLiveObjects: 0.034279 ms CreateObjectMapping: 0.019692 ms MarkObjects: 0.205675 ms  DeleteObjects: 0.011304 ms)
 
 Player1 found and referenced.
  
@@ -507,6 +510,14 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 AC : TrueWC : TrueSC : True
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -523,8 +534,240 @@ Random Card #7
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.774928 ms
+
+Unloading 572 unused Assets to reduce memory usage. Loaded Objects now: 476.
+Total: 0.796444 ms (FindLiveObjects: 0.090803 ms CreateObjectMapping: 0.045219 ms MarkObjects: 0.274233 ms  DeleteObjects: 0.384729 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.654951 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1035.
+Total: 0.312888 ms (FindLiveObjects: 0.059806 ms CreateObjectMapping: 0.020056 ms MarkObjects: 0.220262 ms  DeleteObjects: 0.012398 ms)
+
+Player1 found and referenced.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+FoundSceneChanger
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_1 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_2 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_3 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_4 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_5 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_6 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_7 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_8 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_9 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_10 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_11 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_12 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_13 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_14 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_15 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_16 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_17 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_18 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_19 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_20 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_21 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_22 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_23 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_24 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_25 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_26 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_27 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_28 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_29 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_30 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_31 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_32 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_33 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_34 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_35 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_36 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_37 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_38 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_39 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_40 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_41 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Day_42 referenced!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Loading saved position
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameboardScript.<RollWeek>m__0 (UnityEngine.GameObject x) [0x00000] in <filename unknown>:0 
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].ForEach (System.Action`1 action) [0x00000] in <filename unknown>:0 
+  at GameboardScript.RollWeek () [0x00000] in <filename unknown>:0 
+  at GameboardScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+AC : TrueWC : TrueSC : True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 4694 -> priority: 1 
-  Thread -> id: 223c -> priority: 1 
-  Thread -> id: 4f48 -> priority: 1 
-  Thread -> id: 1490 -> priority: 1 
+  Thread -> id: 528c -> priority: 1 
+  Thread -> id: 237c -> priority: 1 
+  Thread -> id: 21c0 -> priority: 1 
+  Thread -> id: 3164 -> priority: 1 

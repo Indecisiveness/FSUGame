@@ -10,7 +10,7 @@ public class MajorPicker : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
-		MajorList AllMajors = Resources.Load ("AllMajors") as MajorList;
+		MajorList AllMajors = Resources.Load ("myMajorList") as MajorList;
 
 		List<string> myNames = new List<string> ();
 
