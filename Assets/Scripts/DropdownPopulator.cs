@@ -31,6 +31,9 @@ public class DropdownPopulator : MonoBehaviour {
 		List<Course> myCourses = MyScript.coursesRequired;
 		myCourses.ForEach (x => NeedToTake.Add(x.courseName));
 		MyScript.genRequired.ForEach (x => NeedToTake.Add (x.reqName));
+
+		MyScript.GenEdReqs.ForEach (x => NeedToTake.Add(x.reqName));
+
 		RequirementSelector.AddOptions (NeedToTake);
 		RequirementSelector.interactable = true;
 	}

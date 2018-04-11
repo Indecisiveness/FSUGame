@@ -14,7 +14,7 @@
       <File FileName="Assets\Scripts\CharacterCreator.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\MajorPicker.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DropdownPopulator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ClassChooser.cs" Line="78" Column="5" />
+      <File FileName="Assets\Scripts\ClassChooser.cs" Line="78" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

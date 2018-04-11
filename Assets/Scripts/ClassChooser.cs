@@ -51,33 +51,35 @@ public class ClassChooser : MonoBehaviour {
 			MyCourses = new List<string> { SelectedCourse.courseName };
 			}
 
-		if (MyValue < myTranscript.coursesRequired.Count) 
-			{
-				if (myTranscript.coursesRequired[MyValue].CanTake(myTranscript.coursesTaken))
-				{
-					MyCourses.Add(myTranscript.coursesRequired[MyValue].courseName);
-					PickedCourses.Add (myTranscript.coursesRequired[MyValue]);
+		if (MyValue < myTranscript.coursesRequired.Count) {
+			if (myTranscript.coursesRequired [MyValue].CanTake (myTranscript.coursesTaken)) {
+				MyCourses.Add (myTranscript.coursesRequired [MyValue].courseName);
+				PickedCourses.Add (myTranscript.coursesRequired [MyValue]);
 
-				}
-					ThisDropdown.AddOptions (MyCourses);
 			}
-
-			
-		else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
-				List<Course> MyCourseList = myTranscript.genRequired[MyValue-myTranscript.coursesRequired.Count].availCourse;
-				MyCourseList.ForEach ( x => {
-						if (x.CanTake(myTranscript.coursesTaken)){
-							MyCourses.Add(x.courseName);
-							PickedCourses.Add(x);
-						}
-					});
 			ThisDropdown.AddOptions (MyCourses);
-
-			if (CourseChosen) {
-				ThisDropdown.value = 0;
-			}
+		} else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
+			List<Course> MyCourseList = myTranscript.genRequired [MyValue - myTranscript.coursesRequired.Count].availCourse;
+			MyCourseList.ForEach (x => {
+				if (x.CanTake (myTranscript.coursesTaken)) {
+					MyCourses.Add (x.courseName);
+					PickedCourses.Add (x);
+				}
+			});
+		} else if (MyValue - myTranscript.coursesRequired.Count - myTranscript.genRequired.Count < myTranscript.GenEdReqs.Count) {
+			List<Course> MyCourseList = myTranscript.GenEdReqs [MyValue - myTranscript.coursesRequired.Count - myTranscript.genRequired.Count].availCourse;
+			MyCourseList.ForEach (x => {
+				if (x.CanTake (myTranscript.coursesTaken)) {
+					MyCourses.Add (x.courseName);
+					PickedCourses.Add (x);
+				}
+			});
 		}
+		ThisDropdown.AddOptions (MyCourses);	
 
+		if (CourseChosen) {
+			ThisDropdown.value = 0;
+		}
 	}
 
 	public void CourseChose(){
