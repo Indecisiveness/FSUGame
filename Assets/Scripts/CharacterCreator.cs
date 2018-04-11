@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CharacterCreator : MonoBehaviour {
 
 
-	public PlayerScript mainChar;   //character to be given stats
+	public PlayerObject mainChar;   //character to be given stats
 
 	public InputField namePicker;  //Text box for user-inputted string
 
@@ -32,6 +32,10 @@ public class CharacterCreator : MonoBehaviour {
 	public void characterCreation(){
 
 		Debug.Log ("Character Created");
+
+
+		mainChar = Resources.Load<PlayerObject> ("MyPlayer");
+
 
 		mainChar.charName = namePicker.text;  //set character object name to the text entered
 

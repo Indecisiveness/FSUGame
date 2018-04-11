@@ -57,7 +57,6 @@ public class ClassChooser : MonoBehaviour {
 				PickedCourses.Add (myTranscript.coursesRequired [MyValue]);
 
 			}
-			ThisDropdown.AddOptions (MyCourses);
 		} else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
 			List<Course> MyCourseList = myTranscript.genRequired [MyValue - myTranscript.coursesRequired.Count].availCourse;
 			MyCourseList.ForEach (x => {

@@ -60,11 +60,14 @@
      <Compile Include="Assets\Scripts\GameboardScript.cs" />
      <Compile Include="Assets\Scripts\GenReq.cs" />
      <Compile Include="Assets\Scripts\GenReqList.cs" />
+     <Compile Include="Assets\Scripts\Help.cs" />
      <Compile Include="Assets\Scripts\Major.cs" />
      <Compile Include="Assets\Scripts\MajorList.cs" />
      <Compile Include="Assets\Scripts\MajorPicker.cs" />
      <Compile Include="Assets\Scripts\MusicPlayer.cs" />
      <Compile Include="Assets\Scripts\OKScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerBuilder.cs" />
+     <Compile Include="Assets\Scripts\PlayerObject.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\SemesterStart.cs" />
