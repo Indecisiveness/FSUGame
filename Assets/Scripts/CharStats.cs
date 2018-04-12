@@ -26,7 +26,7 @@ public class CharStats : MonoBehaviour{
     public Text motivationText;
     public Text moneyText;
 
-	public PlayerObject Player1;
+	public PlayerScript Player1;
 
     //Stats relative to the following: Job Skills, Study Habits, Social Skills, Physical Health, Sanity, Motivation, Finances
     //Methods can be be modified later for polish
@@ -35,8 +35,6 @@ public class CharStats : MonoBehaviour{
 
     public void setStatsJoe() //Stats method for Joe Character
     {
-		Player1 = Resources.Load<PlayerObject> ("MyPlayer");
-
 		StatValues = new List<int>{1,1,1,1,1,1,1};
 
         displayStats();    
@@ -46,8 +44,6 @@ public class CharStats : MonoBehaviour{
 
     public void setStatsJock() //Stats method for Jock character
     {
-		Player1 = Resources.Load<PlayerObject> ("MyPlayer");
-
 		StatValues = new List<int>{0,0,3,3,0,0,1};
 
         displayStats();
@@ -57,8 +53,6 @@ public class CharStats : MonoBehaviour{
 
     public void setStatsNerd()
     {
-		Player1 = Resources.Load<PlayerObject> ("MyPlayer");
-
 		StatValues = new List<int>{0,3,0,0,0,3,1};
 
         displayStats();

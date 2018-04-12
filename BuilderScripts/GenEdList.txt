@@ -1,3 +1,0 @@
-DataClass,Databases,DataStructures
-HistoryClass,EuroHistory,AmericanHistory
-ArtClass,Sculpture,2DArt

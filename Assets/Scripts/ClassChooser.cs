@@ -31,7 +31,7 @@ public class ClassChooser : MonoBehaviour {
 	public void PopulateCourses(){
 
 
-		GameObject Play1 =  GameObject.FindGameObjectWithTag("Player");
+		GameObject Play1 = GameObject.FindGameObjectWithTag ("Player");
 
 		Transcript myTranscript = (Play1.GetComponent<PlayerScript> ()).myTrans;
 
@@ -40,16 +40,15 @@ public class ClassChooser : MonoBehaviour {
 		Dropdown ThisDropdown = gameObject.GetComponent<Dropdown> ();
 
 		ThisDropdown.ClearOptions ();
-		PickedCourses = new List<Course>();
+		PickedCourses = new List<Course> ();
 
 		List<string> MyCourses;
 
 		if (!CourseChosen) {
 			MyCourses = new List<string> { "Select a Course" };
-		} 
-		else {
+		} else {
 			MyCourses = new List<string> { SelectedCourse.courseName };
-			}
+		}
 
 		if (MyValue < myTranscript.coursesRequired.Count) {
 			if (myTranscript.coursesRequired [MyValue].CanTake (myTranscript.coursesTaken)) {
@@ -57,6 +56,7 @@ public class ClassChooser : MonoBehaviour {
 				PickedCourses.Add (myTranscript.coursesRequired [MyValue]);
 
 			}
+			ThisDropdown.AddOptions (MyCourses);
 		} else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
 			List<Course> MyCourseList = myTranscript.genRequired [MyValue - myTranscript.coursesRequired.Count].availCourse;
 			MyCourseList.ForEach (x => {
@@ -65,6 +65,7 @@ public class ClassChooser : MonoBehaviour {
 					PickedCourses.Add (x);
 				}
 			});
+			ThisDropdown.AddOptions (MyCourses);
 		} else if (MyValue - myTranscript.coursesRequired.Count - myTranscript.genRequired.Count < myTranscript.GenEdReqs.Count) {
 			List<Course> MyCourseList = myTranscript.GenEdReqs [MyValue - myTranscript.coursesRequired.Count - myTranscript.genRequired.Count].availCourse;
 			MyCourseList.ForEach (x => {
@@ -73,12 +74,14 @@ public class ClassChooser : MonoBehaviour {
 					PickedCourses.Add (x);
 				}
 			});
+			ThisDropdown.AddOptions (MyCourses);
 		}
-		ThisDropdown.AddOptions (MyCourses);	
 
 		if (CourseChosen) {
 			ThisDropdown.value = 0;
 		}
+
+
 	}
 
 	public void CourseChose(){

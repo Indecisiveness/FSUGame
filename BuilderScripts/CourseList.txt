@@ -1,9 +1,0 @@
-Java1
-Java2,Java1
-DataStructures,Java1,Java2
-Databases,Java1,Java2
-SoftwareEngineering,Java1,Java2
-Sculpture
-2DArt
-EuroHistory
-AmericanHistory
