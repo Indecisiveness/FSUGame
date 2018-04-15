@@ -5,12 +5,14 @@ using UnityEngine;
 public class TranscriptBuilder : MonoBehaviour {
 
 
-	public static Transcript Create(Major MyMajor, Major MyGenEds){
+	public static Transcript Create(Major MyMajor){
 		Transcript myTranscript = Resources.Load<Transcript> ("myTranscript");
+
+		Major MyGenEds = Resources.Load<Major> ("GenReqMajor/GenReqs");
+
 
 		myTranscript.genRequired = MyMajor.genList;
 		myTranscript.GenEdReqs = MyGenEds.genList;
-
 		myTranscript.coursesRequired = MyMajor.courseList;
 		myTranscript.MajorName = MyMajor.name;
 

@@ -5,21 +5,22 @@ using UnityEngine.UI;
 
 public class ClassChooser : MonoBehaviour {
 
-	public Dropdown RequirementSelector;
+	public Dropdown requirementSelector;  //the dropdown that picks a req
 
-	public Dropdown MySelf;
+	public Dropdown mySelf; 
 
-	public List<Course> PickedCourses;
+	public GameObject pickedCourses; //course or genreq picked on the main dropdown
 
-	public Course SelectedCourse;
+	public List<Course> currentOptions;//options as courses
 
-	public bool CourseChosen;
+	public Course SelectedCourse;//most recently selected course
+
+	public bool CourseChosen;//has a course been chosen
 
 	// Use this for initialization
 	void Start () {
 		CourseChosen = false;
-		PopulateCourses ();
-
+		mySelf = gameObject.GetComponent<Dropdown> ();
 	}
 	
 	// Update is called once per frame
@@ -30,63 +31,62 @@ public class ClassChooser : MonoBehaviour {
     
 	public void PopulateCourses(){
 
+		//get course options
+		PlayerScript playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+		Transcript myScript = playerScript.myTrans;
 
-		GameObject Play1 = GameObject.FindGameObjectWithTag ("Player");
 
-		Transcript myTranscript = (Play1.GetComponent<PlayerScript> ()).myTrans;
 
-		int MyValue = RequirementSelector.value;
+		int MyValue = requirementSelector.value -1;
 
-		Dropdown ThisDropdown = gameObject.GetComponent<Dropdown> ();
-
-		ThisDropdown.ClearOptions ();
-		PickedCourses = new List<Course> ();
-
-		List<string> MyCourses;
-
-		if (!CourseChosen) {
-			MyCourses = new List<string> { "Select a Course" };
-		} else {
-			MyCourses = new List<string> { SelectedCourse.courseName };
+		if (MyValue < 0) {
+			return;
 		}
 
-		if (MyValue < myTranscript.coursesRequired.Count) {
-			if (myTranscript.coursesRequired [MyValue].CanTake (myTranscript.coursesTaken)) {
-				MyCourses.Add (myTranscript.coursesRequired [MyValue].courseName);
-				PickedCourses.Add (myTranscript.coursesRequired [MyValue]);
 
-			}
-			ThisDropdown.AddOptions (MyCourses);
-		} else if (MyValue - myTranscript.coursesRequired.Count < myTranscript.genRequired.Count) {
-			List<Course> MyCourseList = myTranscript.genRequired [MyValue - myTranscript.coursesRequired.Count].availCourse;
-			MyCourseList.ForEach (x => {
-				if (x.CanTake (myTranscript.coursesTaken)) {
-					MyCourses.Add (x.courseName);
-					PickedCourses.Add (x);
-				}
-			});
-			ThisDropdown.AddOptions (MyCourses);
-		} else if (MyValue - myTranscript.coursesRequired.Count - myTranscript.genRequired.Count < myTranscript.GenEdReqs.Count) {
-			List<Course> MyCourseList = myTranscript.GenEdReqs [MyValue - myTranscript.coursesRequired.Count - myTranscript.genRequired.Count].availCourse;
-			MyCourseList.ForEach (x => {
-				if (x.CanTake (myTranscript.coursesTaken)) {
-					MyCourses.Add (x.courseName);
-					PickedCourses.Add (x);
-				}
-			});
-			ThisDropdown.AddOptions (MyCourses);
-		}
+
+		mySelf.ClearOptions ();
+
+		DropdownPopulator myDrop = requirementSelector.GetComponent<DropdownPopulator>();
+
+		string location = myDrop.CourseLocations [MyValue];
+
+		bool genReq = myDrop.genReq [MyValue];
+
+		List<string> MyCourses = new List<string>();
 
 		if (CourseChosen) {
-			ThisDropdown.value = 0;
+			MyCourses.Add (SelectedCourse.courseName);
+		} else {
+			MyCourses.Add ("Select a course");
+		}
+			
+		if (genReq) {
+			GenReq myReq = Resources.Load<GenReq> (location);
+			currentOptions = myReq.availCourse;
+
+			currentOptions.ForEach (x => {
+				if (x.CanTake(myScript.coursesTaken)){
+					MyCourses.Add (x.courseName);
+				}
+			});
+		} else {
+			Course thisCourse = Resources.Load<Course>(location);
+			currentOptions = new List<Course> {thisCourse};
+			MyCourses.Add (currentOptions[0].courseName);
 		}
 
 
+		mySelf.AddOptions (MyCourses);	
+
+		if (CourseChosen) {
+				mySelf.value = 0;
+		}
 	}
 
 	public void CourseChose(){
-		if (MySelf.value > 0) {
-			SelectedCourse = PickedCourses [MySelf.value - 1];
+		if (mySelf.value > 0) {
+			SelectedCourse = currentOptions[mySelf.value - 1];
 			CourseChosen = true;
 		}
 	}
