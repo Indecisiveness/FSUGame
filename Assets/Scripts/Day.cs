@@ -12,12 +12,12 @@ public class Day : MonoBehaviour {
 	public GameObject SCMark;
 	public GameObject WCMark;
 
-	public GameboardScript MyGameboard;
+	public NewGBScript MyGameboard;
 
 
 	// Use this for initialization
 	void Start () {
-		MyGameboard= GetComponentInParent<GameboardScript>();
+        MyGameboard = GameObject.Find("FallGB").GetComponent<NewGBScript>();   //GetComponentInParent<NewGBScript>();
 		ACMark.SetActive (false);
 		SCMark.SetActive (false);
 		WCMark.SetActive (false);
@@ -39,12 +39,12 @@ public class Day : MonoBehaviour {
 		if (SC> .86){
 			this.HasSC = true;
 			this.SCMark.SetActive(true);
-		}
+        }
 		double WC = Random.value;
 		if (WC> .86){
 			this.HasWC = true;
 			this.WCMark.SetActive(true);
-		}
+        }
 
 		UpdateMarks ();
 
