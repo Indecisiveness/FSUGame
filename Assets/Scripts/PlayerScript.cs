@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for player information
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -21,6 +23,7 @@ public class PlayerScript : MonoBehaviour {
     public int saveMonth = 1;
 
 
+	//Weekly time allotment
 	public float timeStudy = 0;
 	public float timeSocial = 0;
 	public float timeWork = 0;
@@ -36,7 +39,7 @@ public class PlayerScript : MonoBehaviour {
 	void Awake () {
 
         if (instance != null) {
-
+			//doesn't allow duplicates
             Destroy(gameObject);
         }
         else {
@@ -44,7 +47,7 @@ public class PlayerScript : MonoBehaviour {
             GameObject.DontDestroyOnLoad(this);
         }
 
-        resetSaveMarkers();
+        resetSaveMarkers();  
         
     }
 	
@@ -54,10 +57,7 @@ public class PlayerScript : MonoBehaviour {
         
 	}
 
-	//public void StayAlive () {
-		//DontDestroyOnLoad (this);
-		//myMajor = myTrans.MajorName;
-	//}
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

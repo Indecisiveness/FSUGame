@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Function to show and hide the help text and help button
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

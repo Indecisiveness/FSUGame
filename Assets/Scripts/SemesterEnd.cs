@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//class for the semester end screen
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

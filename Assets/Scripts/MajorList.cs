@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for the entire set of Majors, to be retrieved during runtime
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

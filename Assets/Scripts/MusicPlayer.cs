@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for the music player, which persists across scenes
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

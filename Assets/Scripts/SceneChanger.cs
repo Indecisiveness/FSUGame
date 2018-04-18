@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for the scene changer, which persists across scenes
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -19,7 +21,7 @@ public class SceneChanger : MonoBehaviour {
     void Awake()
     {
 
-        if (instance != null)
+        if (instance != null)//disallow duplicates
         {
 
             Destroy(gameObject);

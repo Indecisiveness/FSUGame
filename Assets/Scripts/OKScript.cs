@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for the OK button on cards
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

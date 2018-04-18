@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for dropdowns that show course selections at the start of each semester
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +17,7 @@ public class ClassChooser : MonoBehaviour {
 
 	public Course SelectedCourse;//most recently selected course
 
-	public bool CourseChosen;//has a course been chosen
+	public bool CourseChosen;//has a course been chosen?
 
 	// Use this for initialization
 	void Start () {
@@ -39,13 +41,15 @@ public class ClassChooser : MonoBehaviour {
 
 		int MyValue = requirementSelector.value -1;
 
-		if (MyValue < 0) {
+		if (MyValue < 0) {//if nothing has been selected on the requirement selector, don't populate
 			return;
 		}
 
 
 
-		mySelf.ClearOptions ();
+		mySelf.ClearOptions (); 
+
+		//the following get the courses GenReq from the resources folder and stores the relevant ones
 
 		DropdownPopulator myDrop = requirementSelector.GetComponent<DropdownPopulator>();
 
@@ -77,16 +81,17 @@ public class ClassChooser : MonoBehaviour {
 		}
 
 
-		mySelf.AddOptions (MyCourses);	
+
+		mySelf.AddOptions (MyCourses);	//add the options to the dropdown menu
 
 		if (CourseChosen) {
-				mySelf.value = 0;
+				mySelf.value = 0; //set the dropdown to show the previously selected option
 		}
 	}
 
-	public void CourseChose(){
+	public void CourseChose(){ //Function to save the course picked
 		if (mySelf.value > 0) {
-			SelectedCourse = currentOptions[mySelf.value - 1];
+			SelectedCourse = currentOptions[mySelf.value - 1];  
 			CourseChosen = true;
 		}
 	}

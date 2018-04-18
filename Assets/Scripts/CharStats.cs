@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Function for setting and displaying stats at character creation
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;

@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class on the course selection screen that progresses to the start of the semester
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,10 +18,10 @@ public class SemesterStart : MonoBehaviour {
 		MyScript.CoursesInProgress = new List<Course>();
 		MyScript.GradesInProgress = new List<float> ();
 
-		myCourses.ForEach (x => {
+		myCourses.ForEach (x => {   //put each course onto the "taken" part of the transcript and start with Cs in all
 			if (x.CourseChosen) {
 				MyScript.CoursesInProgress.Add (x.SelectedCourse);
-				MyScript.GradesInProgress.Add (2f);
+				MyScript.GradesInProgress.Add (2f);      
 			}
 		});
 	}	

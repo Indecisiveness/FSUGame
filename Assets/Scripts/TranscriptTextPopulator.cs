@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for populating text fields on the transcript view screen
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

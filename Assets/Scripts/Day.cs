@@ -61,22 +61,27 @@ public class Day : MonoBehaviour {
      */
     void randomMarkers() {
 
-        int acOn;           // 1 or 0                                                                                          
-        int scOn;           // 1 or 0                              
-        int wcOn;           // 1 or 0
+        int acOn;           // 0 through 5                                                                                         
+        int scOn;           // 0 through 5                             
+        int wcOn;           // 0 through 5
 
-        acOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f,6f));       // randomly generate a 1 or 0
-        scOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));      // randomly generate a 1 or 0
-        wcOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));      // randomly generate a 1 or 0
+        acOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f,6f));       // randomly generates between 0 and 5
+        scOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));     
+        wcOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));     
 
+
+		//becomes true 1/6 of the time
         if (acOn == 5) { ACMark.SetActive(true); HasAC = true; playerScript.saveMarkers[(dayNumber * 3) - 2] = 1; } else { ACMark.SetActive(false); HasAC = false; playerScript.saveMarkers[(dayNumber * 3) - 2] = 0; }   // set the card marker for this day active based on 1 or 0
         if (scOn == 5) { SCMark.SetActive(true); HasSC = true; playerScript.saveMarkers[(dayNumber * 3) - 1] = 1; } else { SCMark.SetActive(false); HasSC = false; playerScript.saveMarkers[(dayNumber * 3) - 1] = 0; }   // set the card marker for this day active based on 1 or 0
         if (wcOn == 5) { WCMark.SetActive(true); HasWC = true; playerScript.saveMarkers[(dayNumber * 3) - 0] = 1; } else { WCMark.SetActive(false); HasWC = false; playerScript.saveMarkers[(dayNumber * 3) - 0] = 0; }   // set the card marker for this day active based on 1 or 0
     }
 
+
     /** This method puts zeroes in the saveMarkers array in the position of all 3 markers on this day when necessary
      */
     public void zeroOutSaveMarkers() {
+
+		//remove all markers from the current day
 
         playerScript.saveMarkers[(dayNumber * 3) - 2] = 0;
         playerScript.saveMarkers[(dayNumber * 3) - 1] = 0;
@@ -88,6 +93,8 @@ public class Day : MonoBehaviour {
      */
     public void amIValid() {
         
+		//get rid of markers on days that don't exist
+
         if (dayNumber < gameboardScript.currentDayBox) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
 
         if (month == 1 && dayNumber > 32) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
@@ -110,12 +117,16 @@ public class Day : MonoBehaviour {
 
     public void checkMyMarkers() {
 
+		//Turn on ACMarks
+
         if (playerScript.saveMarkers[(dayNumber * 3) - 2] == 1) { ACMark.SetActive(true); HasAC = true; } else { ACMark.SetActive(false); HasAC = false; }
         if (playerScript.saveMarkers[(dayNumber * 3) - 1] == 1) { SCMark.SetActive(true); HasSC = true; } else { SCMark.SetActive(false); HasSC = false; }
         if (playerScript.saveMarkers[(dayNumber * 3) - 0] == 1) { WCMark.SetActive(true); HasWC = true; } else { WCMark.SetActive(false); HasWC = false; }
     }
 
     public void updateMarkers() {
+
+		//randomize markers
 
         if (gameboardScript.newMonth == true)       // if it is a new month then
         {
@@ -174,9 +185,13 @@ public class Day : MonoBehaviour {
 
 */
 
+	//Draw all cards
     public void drawCards() { drawACCard();drawSCCard();drawWCCard(); }
 
+
+	//draw a specific card
     public void drawACCard() {
+
 
         if (HasAC) {
             HasAC = false;

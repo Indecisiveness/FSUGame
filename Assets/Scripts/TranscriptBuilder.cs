@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//class for creating a Transcript object at character creation based on the major selected
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

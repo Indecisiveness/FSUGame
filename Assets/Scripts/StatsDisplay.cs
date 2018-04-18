@@ -6,7 +6,7 @@ using UnityEngine.UI;
 /// <summary>
 /// Original Author: Mark Roberts
 /// Created: 17 March 2018
-/// Fundtion: This class creates the objects required for the status display
+/// Function: This class creates the objects required for the status display
 /// </summary>
 public class StatsDisplay : MonoBehaviour {
 

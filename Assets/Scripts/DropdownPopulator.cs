@@ -1,15 +1,17 @@
-﻿using System.Collections;
+﻿//Function for the transcript requirement selector in the course selection screen
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DropdownPopulator : MonoBehaviour {
 
-	public Dropdown RequirementSelector;
+	public Dropdown RequirementSelector;  //the attached dropdown
 
-	public List<Dropdown> CourseChoosers = new List<Dropdown> (4);
+	public List<Dropdown> CourseChoosers = new List<Dropdown> (4); //dependent on this selection
 
-	public List<string> CourseLocations = new List<string>();
+	public List<string> CourseLocations = new List<string>();  //file endings to be loaded
 
 	public List<bool> genReq;
 
@@ -25,6 +27,7 @@ public class DropdownPopulator : MonoBehaviour {
 
 	public void Populate (){
 
+
 		RequirementSelector.ClearOptions();
 		List<string> NeedToTake = new List<string> ();
 		genReq = new List<bool> ();
@@ -35,9 +38,11 @@ public class DropdownPopulator : MonoBehaviour {
 
 		PlayerScript myPlayer = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerScript> ();
 		Transcript MyScript = myPlayer.myTrans;
-		List<Course> coursesTaken = MyScript.coursesTaken;
+		List<Course> coursesTaken = MyScript.coursesTaken;  //retrieve and save values from Transcript
 		List<Course> myCourses = MyScript.coursesRequired;
 
+
+		//Add courses/GenReqs if they are take-able
 		myCourses.ForEach (x => {
 			if (x.CanTake(coursesTaken)){
 				NeedToTake.Add(x.courseName);
@@ -73,12 +78,12 @@ public class DropdownPopulator : MonoBehaviour {
 				genReq.Add(true);
 			}
 		});
-		RequirementSelector.AddOptions (NeedToTake);
+		RequirementSelector.AddOptions (NeedToTake); //add options to dropdown
 		RequirementSelector.interactable = true;
 	}
 
 	public void PopulateOthers(){
-		CourseChoosers.ForEach(x => x.BroadcastMessage("PopulateCourses"));
+		CourseChoosers.ForEach(x => x.BroadcastMessage("PopulateCourses")); //call the populate functions of the dependent dropdowns
 
 	}
 

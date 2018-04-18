@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for the dropdown on the character selection screen with majors
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

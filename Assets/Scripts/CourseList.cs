@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Class for stored Courses, used for full list of courses
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

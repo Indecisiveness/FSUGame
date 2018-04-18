@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Object to contain the list of all GenReqs
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

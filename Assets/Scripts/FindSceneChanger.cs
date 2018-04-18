@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//present in every scene to locate the Scene changer function that persists across scenes
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
