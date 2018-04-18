@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Orignal Author: Mark Roberts
+/// Created: 17 March 2018
+/// Function: This class manages the objects required for status display.
+/// 
+/// </summary>
 public class StatsManager : MonoBehaviour {
 
 	public StatsDisplay player1Stats;
@@ -16,7 +22,10 @@ public class StatsManager : MonoBehaviour {
 	private bool p3Joined;
 	private bool p4Joined;
 
-	// Use this for initialization
+	/// <summary>
+	/// Upon start this method sets the default values to be 
+	/// displayed on the status screen. 
+	/// </summary>
 	void Start () {
 
 		//the values should be set from characterStats?
@@ -36,12 +45,11 @@ public class StatsManager : MonoBehaviour {
 		SetPlayerVisibility (p4StatsGroup, p4Joined);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	// This method sets visibility to player 2,3 & 4 stats group
+	/// <summary>
+	/// Sets the player visibility.
+	/// </summary>
+	/// <param name="statsGroup">Stats group.</param>
+	/// <param name="joined">If set to <c>true</c> joined.</param>
 	void SetPlayerVisibility( GameObject statsGroup, bool joined){
 		if (joined) {
 			statsGroup.SetActive (true);

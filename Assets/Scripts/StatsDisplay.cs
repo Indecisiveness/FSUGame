@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Original Author: Mark Roberts
+/// Created: 17 March 2018
+/// Fundtion: This class creates the objects required for the status display
+/// </summary>
 public class StatsDisplay : MonoBehaviour {
 
 	public GameObject myPlayer;
@@ -18,6 +23,9 @@ public class StatsDisplay : MonoBehaviour {
 	public Text finances;
 	public Text GPA;
 	public Text classStanding;
+	public Text socialTime;
+	public Text studyTime;
+	public Text workTime;
 	public Text currentYear;
 
 	// Use this for initialization
@@ -35,8 +43,10 @@ public class StatsDisplay : MonoBehaviour {
 		motivation.text = "" + playerScript.charStats [5];
 		finances.text = "" + playerScript.charStats [6];
 		GPA.text = "" + playerScript.myTrans.gpa;
+		socialTime.text = "" + playerScript.timeSocial.ToString ("0.##\\%");
+		studyTime.text = "" + playerScript.timeStudy.ToString ("0.##\\%");
+		workTime.text = "" + playerScript.timeWork.ToString ("0.##\\%");
 
-		
 	}
 	
 	// Update is called once per frame

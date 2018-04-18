@@ -4,7 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
+/// <summary>
+/// Orignal Author: Mark Roberts
+/// Created: 17 March 2018
+/// Function: This class sets the weekly time allotment.
+/// 
+/// </summary>
 public class TimeManager : MonoBehaviour {
 	
 	public TimeSlider socialTimeSlider;
@@ -18,6 +23,9 @@ public class TimeManager : MonoBehaviour {
 	GameObject player;
 	PlayerScript playerScript;
 
+	/// <summary>
+	/// Upon Start this method will load the default values.
+	/// </summary>
 	void Start () {
 
 		socialTimeSlider.timeSliderDescText.text = "Social Time";
@@ -39,7 +47,11 @@ public class TimeManager : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerScript = player.GetComponent<PlayerScript>();
 	}
-	
+
+	/// <summary>
+	/// Upon screen update this method will calculate the total time by limiting 
+	/// the total time of all sliders to the max time.
+	/// </summary>
 	void Update () {
 		totalTime = socialTimeSlider.timeSlider.value + studyTimeSlider.timeSlider.value + workTimeSlider.timeSlider.value;
 		totalTimeSlider.timeSlider.value = totalTime;
@@ -49,14 +61,17 @@ public class TimeManager : MonoBehaviour {
 		totalTimeSlider.availableTime = maxTime;
 	}
 
-public void toGameboard()
-{
-		playerScript.timeStudy = studyTimeSlider.timeSlider.value;
-		playerScript.timeWork = workTimeSlider.timeSlider.value;
-		playerScript.timeSocial = socialTimeSlider.timeSlider.value;
+	/// <summary>
+	/// This method sets the player times and loads the gameboard.
+	/// </summary>
+	public void toGameboard()
+	{
+			playerScript.timeStudy = studyTimeSlider.timeSlider.value;
+			playerScript.timeWork = workTimeSlider.timeSlider.value;
+			playerScript.timeSocial = socialTimeSlider.timeSlider.value;
 
-		SceneManager.LoadScene ("Gameboard");
+			SceneManager.LoadScene ("Gameboard");
 
-}
+	}
 
 }
