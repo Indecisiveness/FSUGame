@@ -22,6 +22,7 @@ public class SemesterEnd : MonoBehaviour {
     public Text classStanding;
     public Text currentYear;
     public Text coursesDone;
+	public Text courseGrades;
 
     // Use this for initialization
     void Start () {
@@ -29,7 +30,20 @@ public class SemesterEnd : MonoBehaviour {
         myPlayer = GameObject.FindGameObjectWithTag("Player");
         playerScript = myPlayer.GetComponent<PlayerScript>();
 
+		List<Course> semCourses = playerScript.myTrans.CoursesInProgress;
+		List<float> semGrades = playerScript.myTrans.GradesInProgress;
+
 		playerScript.myTrans.CompleteSemester ();
+
+
+		string courseDisplay = "";
+
+		semCourses.ForEach( x => courseDisplay = courseDisplay + x.courseName + "\r\n");
+
+		string gradeDisplay = "";
+
+		semGrades.ForEach(x => gradeDisplay = gradeDisplay + x.ToString() + "\r\n"); 
+
 
        // playerName.text = playerScript.charName;
         jobSkills.text = "" + playerScript.charStats[0];
@@ -40,7 +54,9 @@ public class SemesterEnd : MonoBehaviour {
         motivation.text = "" + playerScript.charStats[5];
         finances.text = "" + playerScript.charStats[6];
         GPA.text = "" + playerScript.myTrans.gpa;
-        coursesDone.text = "" + playerScript.myTrans.coursesFinished;
+		classStanding.text = playerScript.myTrans.classStanding;
+		coursesDone.text = courseDisplay;
+		courseGrades.text = gradeDisplay;
 
     }
 	

@@ -18,106 +18,132 @@ public class Day : MonoBehaviour {
     int month = 00;                     // is the current month number 1-12 (from GameBoard)
 
 
-    public GameboardScript gameboardScript;     // object holding reference to the GameBoardScript
+    public NewGBScript gameboardScript;     // object holding reference to the GameBoardScript
     public GameObject months;                   // object holding reference to the Gameboard itself
 
     PlayerScript playerScript;                  // object holding reference to PlayerScript
-       
+    GameObject player;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
+        //DY - commenting out -> player = GameObject.FindGameObjectWithTag("Player");
+        //DY - commenting out -> playerScript = player.GetComponent<PlayerScript>();
+        //DY - commenting out -> months = GameObject.Find("Months");
+        gameboardScript = GameObject.Find("FallGB").GetComponent<NewGBScript>(); //Using newGBScript -> months.GetComponent<GameboardScript>();
 
-        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
-        months = GameObject.Find("Months");
-        gameboardScript = months.GetComponent<GameboardScript>();
+        //DY - commenting out -> objectName = gameObject.name;
+        //DY - commenting out -> month = gameboardScript.currentMonth;                                               // sets dayNumber
+        //DY - commenting out -> Int32.TryParse(objectName.Substring(4, 2), out dayNumber);                         // sets dayNumber
 
-        objectName = gameObject.name;
-        month = gameboardScript.currentMonth;                                               // sets dayNumber
-        Int32.TryParse(objectName.Substring(4 , 2), out dayNumber);                         // sets dayNumber
+        //DY - commenting out -> Debug.Log(objectName + " : " + objectName.Length + " my dayNumber is " + dayNumber);
 
-        Debug.Log(objectName + " : " + objectName.Length + " my dayNumber is " + dayNumber);
+        //ACMark = transform.GetChild(0).transform.GetChild(0).gameObject; //DY - commenting out -> transform.GetChild(0).gameObject.transform.GetChild(0).gameObject;         // get MarkerGroup --> ACMarker
+        //SCMark = transform.GetChild(0).transform.GetChild(1).gameObject; //DY - commenting out -> transform.GetChild(0).gameObject.transform.GetChild(1).gameObject;         // get MarkerGroup --> SCMarker
+        //WCMark = transform.GetChild(0).transform.GetChild(2).gameObject; //DY - commenting out -> transform.GetChild(0).gameObject.transform.GetChild(2).gameObject;       // get MarkerGroup --> WCMarker
 
-        ACMark = transform.GetChild(0).gameObject.transform.GetChild(0).gameObject;         // get MarkerGroup --> ACMarker
-        SCMark = transform.GetChild(0).gameObject.transform.GetChild(1).gameObject;         // get MarkerGroup --> SCMarker
-        WCMark = transform.GetChild(0).gameObject.transform.GetChild(2).gameObject;         // get MarkerGroup --> WCMarker
 
-        updateMarkers();                                                                    // check updateMarkers method
 
+        //DY - commenting out -> updateMarkers();
+        //DY - commenting out -> noSundays();
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-		if (gameboardScript.currentDayBox == dayNumber && gameboardScript.currentDayBox%7 != 1) {
+    // Update is called once per frame
+    void Update () {        
+        /* DY Commenting out
+        if (gameboardScript.currentDayBox == dayNumber) {
 
-            drawACCard();
-            drawSCCard();
-            drawWCCard();
+            drawCards();
         }
+        DY*/
 	}
 
 
     /** This method randomizes which markers to activate and deactivate.
      */
-    void randomMarkers() {
+    public void randomMarkers() {
 
-        int acOn;           // 0 through 5                                                                                         
-        int scOn;           // 0 through 5                             
-        int wcOn;           // 0 through 5
+        int acOn;           // 0 to 5                                                                                          
+        int scOn;           // 0 to 5                              
+        int wcOn;           // 0 to 5
 
-        acOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f,6f));       // randomly generates between 0 and 5
-        scOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));     
-        wcOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));     
+        acOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f,6f));       // randomly generate 0-5
+        scOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));      
+        wcOn = (int)Mathf.Floor(UnityEngine.Random.Range(0f, 6f));      
 
-
-		//becomes true 1/6 of the time
-        if (acOn == 5) { ACMark.SetActive(true); HasAC = true; playerScript.saveMarkers[(dayNumber * 3) - 2] = 1; } else { ACMark.SetActive(false); HasAC = false; playerScript.saveMarkers[(dayNumber * 3) - 2] = 0; }   // set the card marker for this day active based on 1 or 0
-        if (scOn == 5) { SCMark.SetActive(true); HasSC = true; playerScript.saveMarkers[(dayNumber * 3) - 1] = 1; } else { SCMark.SetActive(false); HasSC = false; playerScript.saveMarkers[(dayNumber * 3) - 1] = 0; }   // set the card marker for this day active based on 1 or 0
-        if (wcOn == 5) { WCMark.SetActive(true); HasWC = true; playerScript.saveMarkers[(dayNumber * 3) - 0] = 1; } else { WCMark.SetActive(false); HasWC = false; playerScript.saveMarkers[(dayNumber * 3) - 0] = 0; }   // set the card marker for this day active based on 1 or 0
+        if (acOn == 0) { ACMark.SetActive(true); HasAC = true; ACMark.GetComponent<SpriteRenderer>().sortingOrder = 0; } //DY - commenting out ->  playerScript.saveMarkers[(dayNumber * 3) - 2] = 1; }     // set the card marker for this day active based on 1 or 0
+        else { ACMark.SetActive(false); HasAC = false;  } //DY - commenting out ->  playerScript.saveMarkers[(dayNumber * 3) - 2] = 0; }   
+        if (scOn == 0) { SCMark.SetActive(true); HasSC = true; SCMark.GetComponent<SpriteRenderer>().sortingOrder = 0; } //DY - commenting out ->  playerScript.saveMarkers[(dayNumber * 3) - 1] = 1; }     // set the card marker for this day active based on 1 or 0
+        else { SCMark.SetActive(false); HasSC = false; } //DY - commenting out ->  playerScript.saveMarkers[(dayNumber * 3) - 1] = 0; }   
+        if (wcOn == 0) { WCMark.SetActive(true); HasWC = true; WCMark.GetComponent<SpriteRenderer>().sortingOrder = 0;  } //DY - commenting out ->  playerScript.saveMarkers[(dayNumber * 3) - 0] = 1; }     // set the card marker for this day active based on 1 or 0
+        else { WCMark.SetActive(false); HasWC = false; } //DY - commenting out -> playerScript.saveMarkers[(dayNumber * 3) - 0] = 0; }   
     }
 
+    public void turnOffDay() {
+
+        //zeroOutSaveMarkers();
+        ACMark.SetActive(false);
+        SCMark.SetActive(false);
+        WCMark.SetActive(false);
+        HasAC = false;
+        HasSC = false;
+        HasWC = false;
+    }
+
+    public void noSundays() {
+
+        if (dayNumber == 01 || dayNumber == 08 || dayNumber == 15 || dayNumber == 22 || dayNumber == 29 || dayNumber == 36)
+        {
+
+            turnOffDay();
+        }
+    }
 
     /** This method puts zeroes in the saveMarkers array in the position of all 3 markers on this day when necessary
      */
     public void zeroOutSaveMarkers() {
-
-		//remove all markers from the current day
 
         playerScript.saveMarkers[(dayNumber * 3) - 2] = 0;
         playerScript.saveMarkers[(dayNumber * 3) - 1] = 0;
         playerScript.saveMarkers[(dayNumber * 3) - 0] = 0;
     }
 
+    /*DY Commenting out
+    public static explicit operator Day(GameObject v)
+    {
+        throw new NotImplementedException();
+    }
+    DY*/
 
     /** This method has the day object itself check if it should make itself active or inactive.
      */
     public void amIValid() {
-        
-		//get rid of markers on days that don't exist
+        /* DY Commenting out
+        if (dayNumber < gameboardScript.currentDayBox) { turnOffDay(); }        
 
-        if (dayNumber < gameboardScript.currentDayBox) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
+        if (month == 1 && dayNumber > 32) { turnOffDay();  }
+        else if (month == 2 && dayNumber > 35) { turnOffDay(); }
+        else if (month == 3 && dayNumber > 35) { turnOffDay(); }
+        else if (month == 4 && dayNumber > 33) { turnOffDay(); }
+        else if (month == 5 && dayNumber > 36) { turnOffDay(); }
+        else if (month == 6 && dayNumber > 29) { turnOffDay(); }
+        else if (month == 7 && dayNumber > 31) { turnOffDay(); }
+        else if (month == 8 && dayNumber > 33) { turnOffDay(); }
+        else if (month == 9 && dayNumber > 36) { turnOffDay(); }
+        else if (month == 10 && dayNumber > 30) { turnOffDay(); }
+        else if (month == 11 && dayNumber > 33) { turnOffDay(); }
+        else if (month == 12 && dayNumber > 35) { turnOffDay(); }
 
-        if (month == 1 && dayNumber > 32) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 2 && dayNumber > 35) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 3 && dayNumber > 35) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 4 && dayNumber > 33) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 5 && dayNumber > 36) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 6 && dayNumber > 29) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 7 && dayNumber > 31) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 8 && dayNumber > 33) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 9 && dayNumber > 36) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 10 && dayNumber > 30) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 11 && dayNumber > 33) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
-        else if (month == 12 && dayNumber > 35) { zeroOutSaveMarkers(); gameObject.SetActive(false);  }
+        noSundays();
 
         checkMyMarkers();
+
+        DY*/
        
         
     }
 
     public void checkMyMarkers() {
-
-		//Turn on ACMarks
 
         if (playerScript.saveMarkers[(dayNumber * 3) - 2] == 1) { ACMark.SetActive(true); HasAC = true; } else { ACMark.SetActive(false); HasAC = false; }
         if (playerScript.saveMarkers[(dayNumber * 3) - 1] == 1) { SCMark.SetActive(true); HasSC = true; } else { SCMark.SetActive(false); HasSC = false; }
@@ -125,9 +151,7 @@ public class Day : MonoBehaviour {
     }
 
     public void updateMarkers() {
-
-		//randomize markers
-
+        /* DY commenting out
         if (gameboardScript.newMonth == true)       // if it is a new month then
         {
             randomMarkers();                // randomize which of the child markers of this day are active
@@ -137,6 +161,7 @@ public class Day : MonoBehaviour {
         {                              // if not a new month
             checkMyMarkers();          // check  which of your markers should be on
         }
+        */
     }
 
     /**
@@ -185,20 +210,16 @@ public class Day : MonoBehaviour {
 
 */
 
-	//Draw all cards
     public void drawCards() { drawACCard();drawSCCard();drawWCCard(); }
 
-
-	//draw a specific card
     public void drawACCard() {
-
 
         if (HasAC) {
             HasAC = false;
             gameboardScript.showRandomAcademic();
             ACMark.SetActive(false);
-            playerScript.saveMarkers[(dayNumber * 3) - 2] = 0;
-            return;
+            //playerScript.saveMarkers[(dayNumber * 3) - 2] = 0;
+            //return;
         }
     }
 
@@ -208,8 +229,8 @@ public class Day : MonoBehaviour {
             HasSC = false;
             gameboardScript.showRandomSocial();
             SCMark.SetActive(false);
-            playerScript.saveMarkers[(dayNumber * 3) - 1] = 0;
-            return;
+            //playerScript.saveMarkers[(dayNumber * 3) - 1] = 0;
+            //return;
         }
     }
 
@@ -220,14 +241,23 @@ public class Day : MonoBehaviour {
             HasWC = false;
             gameboardScript.showRandomWork();
             WCMark.SetActive(false);
-            playerScript.saveMarkers[(dayNumber * 3) - 0] = 0;
-            return;
+            //playerScript.saveMarkers[(dayNumber * 3) - 0] = 0;
+            //return;
         }
+    }   
+
+    //DY************adding method to see if day has active marker
+
+    public bool hasActiveMarker()
+    {
+        return (HasAC || HasSC || HasWC);
     }
 
-
-       
-
-	
-    
+    //DY***************adding method to deactivate markers
+    public void deactivateMarkers()
+    {
+        HasAC = false;
+        HasSC = false;
+        HasWC = false;
+    }
 }
