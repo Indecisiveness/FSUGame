@@ -24,6 +24,11 @@ public class SemesterStart : MonoBehaviour {
 				MyScript.GradesInProgress.Add (2f);      
 			}
 		});
+
+		NetworkManagerScript myNetwork = GameObject.FindObjectOfType<NetworkManagerScript> ();
+		if (myNetwork != null) {
+			myNetwork.ChangeMade ();
+		}
 	}	
 
 

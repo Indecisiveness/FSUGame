@@ -42,6 +42,8 @@ public class CharStats : MonoBehaviour{
         displayStats();    
 
 		Player1.charStats = StatValues;
+
+        Player1.sr.sprite = Player1.sprites[0];
     }
 
     public void setStatsJock() //Stats method for Jock character
@@ -51,6 +53,8 @@ public class CharStats : MonoBehaviour{
         displayStats();
 
 		Player1.charStats = StatValues;
+
+        Player1.sr.sprite = Player1.sprites[1];
     }
 
     public void setStatsNerd()
@@ -60,6 +64,30 @@ public class CharStats : MonoBehaviour{
         displayStats();
 
 		Player1.charStats = StatValues;
+
+        Player1.sr.sprite = Player1.sprites[2];
+    }
+
+    public void setStatsClown()
+    {
+        StatValues = new List<int> { 3, 0, 3, 0, 1, 0, 0 };
+
+        displayStats();
+
+        Player1.charStats = StatValues;
+
+        Player1.sr.sprite = Player1.sprites[3];
+    }
+
+    public void setStatsFancy()
+    {
+        StatValues = new List<int> { 0, 0, 1, 0, 3, 0, 3 };
+
+        displayStats();
+
+        Player1.charStats = StatValues;
+
+        Player1.sr.sprite = Player1.sprites[4];
     }
 
     public void displayStats() //Method to display stats on the character select screen

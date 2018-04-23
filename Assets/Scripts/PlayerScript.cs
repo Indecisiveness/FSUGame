@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
 
-
+    public SpriteRenderer sr;
     public Sprite[] sprites;
 
     public string charName;                                 //char name
@@ -28,7 +28,7 @@ public class PlayerScript : MonoBehaviour {
 	public float timeSocial = 0;
 	public float timeWork = 0;
 
-
+	public int pNum;
 	
 
 
@@ -37,6 +37,9 @@ public class PlayerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+
+        sr = gameObject.GetComponent<SpriteRenderer>();
+       
 
         if (instance != null) {
 			//doesn't allow duplicates

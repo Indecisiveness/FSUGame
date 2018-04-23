@@ -24,6 +24,8 @@ public class TranscriptBuilder : MonoBehaviour {
 		myTranscript.GradesInProgress = new List<float>();
 		myTranscript.readyForGrad = false;
 
+		myTranscript.classStanding = "Freshman";
+
 		return myTranscript;
 	}
 

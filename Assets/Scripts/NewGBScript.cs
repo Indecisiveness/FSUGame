@@ -478,7 +478,7 @@ public class NewGBScript : MonoBehaviour {
     public void showRandomSocial()
     {
         int card = (int)Mathf.Floor(Random.Range((float)1, (float)16));
-        Vector3 cardPos = new Vector3(-6, -0.874f, -5);
+        Vector3 cardPos = new Vector3(6, -0.874f, -5);
         GameObject.Instantiate(scCardsArray[card], cardPos, this.transform.rotation);
         Debug.Log("Random Card #" + card);
     }
@@ -486,7 +486,7 @@ public class NewGBScript : MonoBehaviour {
     public void showRandomWork()
     {
         int card = (int)Mathf.Floor(Random.Range((float)1, (float)16));
-        Vector3 cardPos = new Vector3(6, -0.874f, -5);
+        Vector3 cardPos = new Vector3(-6, -0.874f, -5);
         GameObject.Instantiate(wcCardsArray[card], cardPos, this.transform.rotation);
          Debug.Log("Random Card #" + card);
     }

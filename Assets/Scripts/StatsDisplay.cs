@@ -21,16 +21,22 @@ public class StatsDisplay : MonoBehaviour {
 	public Text sanity;
 	public Text motivation;
 	public Text finances;
-	public Text GPA;
-	public Text classStanding;
 	public Text socialTime;
 	public Text studyTime;
 	public Text workTime;
-	public Text currentYear;
+	public Text GPA;
+	public Text classStanding;
 
 	// Use this for initialization
 	void Start () {
 
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	}
+
+	public void fillFields(){
 		myPlayer = GameObject.FindGameObjectWithTag ("Player");
 		playerScript = myPlayer.GetComponent<PlayerScript> ();
 
@@ -42,14 +48,11 @@ public class StatsDisplay : MonoBehaviour {
 		sanity.text = "" + playerScript.charStats [4];
 		motivation.text = "" + playerScript.charStats [5];
 		finances.text = "" + playerScript.charStats [6];
-		GPA.text = "" + playerScript.myTrans.gpa;
 		socialTime.text = "" + playerScript.timeSocial.ToString ("0.##\\%");
 		studyTime.text = "" + playerScript.timeStudy.ToString ("0.##\\%");
 		workTime.text = "" + playerScript.timeWork.ToString ("0.##\\%");
+		GPA.text = "" + playerScript.myTrans.gpa;
+		classStanding.text = "" + playerScript.myTrans.classStanding;
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
 	}
 }

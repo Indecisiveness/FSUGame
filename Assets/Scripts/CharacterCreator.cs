@@ -33,6 +33,8 @@ public class CharacterCreator : MonoBehaviour {
 
 	public void characterCreation(){
 
+
+
 		Debug.Log ("Character Created");
 
 		mainChar.charName = namePicker.text;  //set character object name to the text entered
@@ -44,11 +46,8 @@ public class CharacterCreator : MonoBehaviour {
 
 		Major MyMajor = AllMajors.MyMajors [ThisMajor]; //retrieve the major
 
-
-
 		mainChar.myTrans = TranscriptBuilder.Create (MyMajor); //create a transcript for that major
         
-	
 
 	}
 
