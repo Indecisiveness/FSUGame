@@ -3,21 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * This class provides a countdown timer for the winter break game.  The timer counts down in increments of tenths of a second and is displayed in the winter game board. 
+ * If time has run out, a "You Lose" message is displayed.
+ */
 public class CountdownTimerScript : MonoBehaviour {
 
     int counter;
+    int tenthsOfSecond;
     public int seconds;
     public bool start;
-    int tenthsOfSecond;
+    
     Text timeLeft;
+    WinterBreakScript winterBreakScript;
 
 	// Use this for initialization
 	void Start () {
+        winterBreakScript = GameObject.Find("WinterGO").GetComponent<WinterBreakScript>();
         counter = 0;
         tenthsOfSecond = 0;
         start = false;
-        timeLeft = GameObject.Find("TimeLeftText").GetComponent<Text>();
 
+        //Initializing timeLEft to the Text object displaying time left
+        timeLeft = GameObject.Find("TimeLeftText").GetComponent<Text>();
         timeLeft.text = seconds.ToString() + "." + tenthsOfSecond.ToString();
     }
 	
@@ -25,8 +33,10 @@ public class CountdownTimerScript : MonoBehaviour {
 	void Update () {
         if(start)
         {
+            //counter increments 60 times per second
             counter++;
 
+            //if 0.1 seconds have elapsed
             if (counter % 6 == 0)
             {
                 if (tenthsOfSecond == 0)
@@ -38,20 +48,23 @@ public class CountdownTimerScript : MonoBehaviour {
                 tenthsOfSecond--;
             }
 
-            if (seconds < 11)
-                timeLeft.color = Color.red;
-            else
-                timeLeft.color = Color.black;
+            //Remaining time is displayed in white text until there are five seconds remaining.  Then the text is red
+            if (seconds < 5) { timeLeft.color = Color.red; }
+            else { timeLeft.color = Color.white; }
 
+            //Display remaining time un UI
             timeLeft.text = seconds.ToString() + "." + tenthsOfSecond.ToString();
 
+
+            //If time runs out, end game and display you lose
             if (seconds == 0 && tenthsOfSecond == 0)
             {
-                //gameOver();
+                winterBreakScript.clickMe.SetActive(false);
+                winterBreakScript.winButton.SetActive(true);
+                winterBreakScript.winButton.GetComponentInChildren<Text>().text = "YOU LOSE!!!";
+                winterBreakScript.startGame = false;
+                start = false;
             }
         }
-        
-            
-
 	}
 }

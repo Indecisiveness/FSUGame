@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class is to hide the "hideCard" in the memory game, in effect displaying the memory card.
+ */
 public class ShowCardScript : MonoBehaviour {
 
     MemoryGameScript memoryGameScript;
@@ -17,8 +20,10 @@ public class ShowCardScript : MonoBehaviour {
 
     public void showCard()
     {
+        //Hide this hideCArd and display the color card
         this.gameObject.SetActive(false);
 
-        memoryGameScript.wait(int.Parse(this.gameObject.name.ToString().Substring(4, 2).ToString()));
+        //Call method with its index as an argument to check if the memory card is the first or second card selected. If it is the second, check to see if they match
+        memoryGameScript.checkMemoryCard(int.Parse(this.gameObject.name.ToString().Substring(4, 2).ToString()));
     }
 }
