@@ -1,0 +1,1198 @@
+Initialize engine version: 5.6.5f1 (2cac56bf7bb6)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 730 (ID=0x1287)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   24.21.13.9836
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\edwar\Desktop\FSU\Software Engineering\4_25FINAL\4_25_Submission\FSUGamePCBuild_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.010143 ms
+StartScreen
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.274327 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 580.
+Total: 0.709288 ms (FindLiveObjects: 0.069652 ms CreateObjectMapping: 0.034643 ms MarkObjects: 0.342792 ms  DeleteObjects: 0.261470 ms)
+
+Character Created
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+charSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.158564 ms
+
+Unloading 565 unused Assets to reduce memory usage. Loaded Objects now: 894.
+Total: 0.774564 ms (FindLiveObjects: 0.100284 ms CreateObjectMapping: 0.048501 ms MarkObjects: 0.471886 ms  DeleteObjects: 0.153162 ms)
+
+CourseSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.623954 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 819.
+Total: 0.530233 ms (FindLiveObjects: 0.064547 ms CreateObjectMapping: 0.024068 ms MarkObjects: 0.425572 ms  DeleteObjects: 0.015316 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.739555 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1372.
+Total: 0.488661 ms (FindLiveObjects: 0.056159 ms CreateObjectMapping: 0.026256 ms MarkObjects: 0.390564 ms  DeleteObjects: 0.014951 ms)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.379988 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.049527 ms (FindLiveObjects: 0.148057 ms CreateObjectMapping: 0.088980 ms MarkObjects: 0.804467 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.728251 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.032388 ms (FindLiveObjects: 0.135293 ms CreateObjectMapping: 0.096638 ms MarkObjects: 0.781857 ms  DeleteObjects: 0.018233 ms)
+
+Random Card #8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.415726 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.147624 ms (FindLiveObjects: 0.133834 ms CreateObjectMapping: 0.094085 ms MarkObjects: 0.912046 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.720228 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 0.981333 ms (FindLiveObjects: 0.135293 ms CreateObjectMapping: 0.098826 ms MarkObjects: 0.725698 ms  DeleteObjects: 0.020421 ms)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.354826 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.050621 ms (FindLiveObjects: 0.141128 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.812855 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.710382 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.021083 ms (FindLiveObjects: 0.130917 ms CreateObjectMapping: 0.095179 ms MarkObjects: 0.775658 ms  DeleteObjects: 0.018598 ms)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.344250 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.122097 ms (FindLiveObjects: 0.125447 ms CreateObjectMapping: 0.104661 ms MarkObjects: 0.884330 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.763624 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.028011 ms (FindLiveObjects: 0.132376 ms CreateObjectMapping: 0.096638 ms MarkObjects: 0.779305 ms  DeleteObjects: 0.019327 ms)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.387646 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.090735 ms (FindLiveObjects: 0.167020 ms CreateObjectMapping: 0.096273 ms MarkObjects: 0.819054 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.765447 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.088182 ms (FindLiveObjects: 0.158997 ms CreateObjectMapping: 0.106849 ms MarkObjects: 0.803373 ms  DeleteObjects: 0.017868 ms)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.412809 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 0.974769 ms (FindLiveObjects: 0.117789 ms CreateObjectMapping: 0.097002 ms MarkObjects: 0.749402 ms  DeleteObjects: 0.009846 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.811396 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.069584 ms (FindLiveObjects: 0.123988 ms CreateObjectMapping: 0.095179 ms MarkObjects: 0.833641 ms  DeleteObjects: 0.016045 ms)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.342062 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 0.984615 ms (FindLiveObjects: 0.135658 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.750496 ms  DeleteObjects: 0.008752 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.747943 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.007225 ms (FindLiveObjects: 0.152433 ms CreateObjectMapping: 0.107943 ms MarkObjects: 0.728615 ms  DeleteObjects: 0.017504 ms)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.304136 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.105322 ms (FindLiveObjects: 0.142222 ms CreateObjectMapping: 0.090438 ms MarkObjects: 0.864273 ms  DeleteObjects: 0.007658 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.790610 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.023271 ms (FindLiveObjects: 0.177230 ms CreateObjectMapping: 0.094450 ms MarkObjects: 0.732627 ms  DeleteObjects: 0.018233 ms)
+
+Random Card #9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.332581 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.116627 ms (FindLiveObjects: 0.138575 ms CreateObjectMapping: 0.092626 ms MarkObjects: 0.877037 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.781493 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.096205 ms (FindLiveObjects: 0.180877 ms CreateObjectMapping: 0.101378 ms MarkObjects: 0.794621 ms  DeleteObjects: 0.018962 ms)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.339510 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.087818 ms (FindLiveObjects: 0.152797 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.837652 ms  DeleteObjects: 0.007658 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.799726 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.079430 ms (FindLiveObjects: 0.191088 ms CreateObjectMapping: 0.105755 ms MarkObjects: 0.764718 ms  DeleteObjects: 0.017504 ms)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.329299 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.036764 ms (FindLiveObjects: 0.140398 ms CreateObjectMapping: 0.102108 ms MarkObjects: 0.784775 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.819783 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.078701 ms (FindLiveObjects: 0.170666 ms CreateObjectMapping: 0.093720 ms MarkObjects: 0.795350 ms  DeleteObjects: 0.017868 ms)
+
+Random Card #7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.340239 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.126108 ms (FindLiveObjects: 0.166290 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.862815 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.725698 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.052809 ms (FindLiveObjects: 0.159361 ms CreateObjectMapping: 0.105755 ms MarkObjects: 0.768729 ms  DeleteObjects: 0.018233 ms)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.366131 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2984.
+Total: 1.092194 ms (FindLiveObjects: 0.152797 ms CreateObjectMapping: 0.090074 ms MarkObjects: 0.842393 ms  DeleteObjects: 0.006564 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.788057 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3522.
+Total: 1.058279 ms (FindLiveObjects: 0.172125 ms CreateObjectMapping: 0.095179 ms MarkObjects: 0.759612 ms  DeleteObjects: 0.030997 ms)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.315077 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2819.
+Total: 0.917151 ms (FindLiveObjects: 0.155715 ms CreateObjectMapping: 0.101014 ms MarkObjects: 0.653128 ms  DeleteObjects: 0.006928 ms)
+
+WinterBreak
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'GPA Text') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'CourseTaken Text') is missing!
+ 
+(Filename:  Line: 1744)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.555031 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2903.
+Total: 1.052809 ms (FindLiveObjects: 0.164831 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.755236 ms  DeleteObjects: 0.042666 ms)
+
+previous gpa: 0Semester quality points: 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+SemesterEnd
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.786598 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 3064.
+Total: 1.148718 ms (FindLiveObjects: 0.152797 ms CreateObjectMapping: 0.095179 ms MarkObjects: 0.893447 ms  DeleteObjects: 0.006928 ms)
+
+CourseSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.747943 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2989.
+Total: 1.115168 ms (FindLiveObjects: 0.147692 ms CreateObjectMapping: 0.090074 ms MarkObjects: 0.856980 ms  DeleteObjects: 0.019327 ms)
+
+WeekSelect
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.857709 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2798.
+Total: 0.885060 ms (FindLiveObjects: 0.102472 ms CreateObjectMapping: 0.090438 ms MarkObjects: 0.673550 ms  DeleteObjects: 0.018233 ms)
+
+Transcript
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.609732 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.081983 ms (FindLiveObjects: 0.169572 ms CreateObjectMapping: 0.092626 ms MarkObjects: 0.812125 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.856980 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.133767 ms (FindLiveObjects: 0.171396 ms CreateObjectMapping: 0.092991 ms MarkObjects: 0.850781 ms  DeleteObjects: 0.018233 ms)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.360296 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.293128 ms (FindLiveObjects: 0.160820 ms CreateObjectMapping: 0.132740 ms MarkObjects: 0.989721 ms  DeleteObjects: 0.009481 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.806655 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.116627 ms (FindLiveObjects: 0.168478 ms CreateObjectMapping: 0.104661 ms MarkObjects: 0.824889 ms  DeleteObjects: 0.017868 ms)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.353003 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.048433 ms (FindLiveObjects: 0.167020 ms CreateObjectMapping: 0.090074 ms MarkObjects: 0.783316 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.939031 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.131214 ms (FindLiveObjects: 0.181606 ms CreateObjectMapping: 0.106119 ms MarkObjects: 0.825618 ms  DeleteObjects: 0.017504 ms)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.334769 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.182633 ms (FindLiveObjects: 0.155715 ms CreateObjectMapping: 0.103567 ms MarkObjects: 0.915328 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.793892 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.052445 ms (FindLiveObjects: 0.130917 ms CreateObjectMapping: 0.096273 ms MarkObjects: 0.806291 ms  DeleteObjects: 0.018233 ms)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.313618 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.099123 ms (FindLiveObjects: 0.154621 ms CreateObjectMapping: 0.088980 ms MarkObjects: 0.847499 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.774199 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.084171 ms (FindLiveObjects: 0.142951 ms CreateObjectMapping: 0.095179 ms MarkObjects: 0.828171 ms  DeleteObjects: 0.017504 ms)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.424114 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.117356 ms (FindLiveObjects: 0.153891 ms CreateObjectMapping: 0.088615 ms MarkObjects: 0.866826 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.755236 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.030564 ms (FindLiveObjects: 0.132011 ms CreateObjectMapping: 0.108307 ms MarkObjects: 0.770553 ms  DeleteObjects: 0.018962 ms)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.427396 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.108604 ms (FindLiveObjects: 0.142222 ms CreateObjectMapping: 0.107943 ms MarkObjects: 0.850781 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.742473 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.131214 ms (FindLiveObjects: 0.172125 ms CreateObjectMapping: 0.092991 ms MarkObjects: 0.848228 ms  DeleteObjects: 0.017139 ms)
+
+Random Card #7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.342792 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.203784 ms (FindLiveObjects: 0.130188 ms CreateObjectMapping: 0.107578 ms MarkObjects: 0.957994 ms  DeleteObjects: 0.007658 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.823795 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.079430 ms (FindLiveObjects: 0.165561 ms CreateObjectMapping: 0.093720 ms MarkObjects: 0.772741 ms  DeleteObjects: 0.032455 ms)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.340239 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.065208 ms (FindLiveObjects: 0.154985 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.812490 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.805926 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.207066 ms (FindLiveObjects: 0.131282 ms CreateObjectMapping: 0.097002 ms MarkObjects: 0.959453 ms  DeleteObjects: 0.018962 ms)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.359202 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.041504 ms (FindLiveObjects: 0.153891 ms CreateObjectMapping: 0.090074 ms MarkObjects: 0.789516 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.886883 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.125014 ms (FindLiveObjects: 0.171031 ms CreateObjectMapping: 0.107213 ms MarkObjects: 0.826348 ms  DeleteObjects: 0.019692 ms)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.342427 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.007954 ms (FindLiveObjects: 0.149880 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.760706 ms  DeleteObjects: 0.007658 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.718040 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.030199 ms (FindLiveObjects: 0.132011 ms CreateObjectMapping: 0.095544 ms MarkObjects: 0.782587 ms  DeleteObjects: 0.019327 ms)
+
+Random Card #2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.364672 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.121003 ms (FindLiveObjects: 0.168114 ms CreateObjectMapping: 0.089344 ms MarkObjects: 0.856251 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.856980 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 0.970393 ms (FindLiveObjects: 0.133470 ms CreateObjectMapping: 0.091168 ms MarkObjects: 0.725698 ms  DeleteObjects: 0.019327 ms)
+
+Random Card #5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.348991 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.037128 ms (FindLiveObjects: 0.155350 ms CreateObjectMapping: 0.088615 ms MarkObjects: 0.785504 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.786234 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.763556 ms (FindLiveObjects: 0.168114 ms CreateObjectMapping: 0.165926 ms MarkObjects: 1.379556 ms  DeleteObjects: 0.049230 ms)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.378530 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.027647 ms (FindLiveObjects: 0.141492 ms CreateObjectMapping: 0.089709 ms MarkObjects: 0.788422 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.786963 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.052080 ms (FindLiveObjects: 0.158997 ms CreateObjectMapping: 0.106484 ms MarkObjects: 0.768000 ms  DeleteObjects: 0.017868 ms)
+
+Random Card #3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.324558 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.039681 ms (FindLiveObjects: 0.142222 ms CreateObjectMapping: 0.106484 ms MarkObjects: 0.782951 ms  DeleteObjects: 0.007293 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.789880 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.147989 ms (FindLiveObjects: 0.132376 ms CreateObjectMapping: 0.097732 ms MarkObjects: 0.896729 ms  DeleteObjects: 0.020056 ms)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Random Card #6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.420102 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.221288 ms (FindLiveObjects: 0.199475 ms CreateObjectMapping: 0.091532 ms MarkObjects: 0.922621 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.803008 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.054997 ms (FindLiveObjects: 0.159726 ms CreateObjectMapping: 0.106849 ms MarkObjects: 0.769459 ms  DeleteObjects: 0.018598 ms)
+
+Random Card #12
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.401139 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.038222 ms (FindLiveObjects: 0.142222 ms CreateObjectMapping: 0.102837 ms MarkObjects: 0.785869 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.706370 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.059373 ms (FindLiveObjects: 0.164102 ms CreateObjectMapping: 0.097732 ms MarkObjects: 0.777846 ms  DeleteObjects: 0.018962 ms)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.330028 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 0.977687 ms (FindLiveObjects: 0.133105 ms CreateObjectMapping: 0.090074 ms MarkObjects: 0.745755 ms  DeleteObjects: 0.008387 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.892718 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.186644 ms (FindLiveObjects: 0.198017 ms CreateObjectMapping: 0.109401 ms MarkObjects: 0.860262 ms  DeleteObjects: 0.018233 ms)
+
+Random Card #1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Gameboard
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.342792 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 481)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2992.
+Total: 1.037493 ms (FindLiveObjects: 0.141492 ms CreateObjectMapping: 0.101378 ms MarkObjects: 0.786963 ms  DeleteObjects: 0.006928 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.793527 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3530.
+Total: 1.137778 ms (FindLiveObjects: 0.182336 ms CreateObjectMapping: 0.106119 ms MarkObjects: 0.829630 ms  DeleteObjects: 0.018962 ms)
+
+Random Card #9
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.375612 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2928.
+Total: 0.972946 ms (FindLiveObjects: 0.162279 ms CreateObjectMapping: 0.088615 ms MarkObjects: 0.714028 ms  DeleteObjects: 0.006928 ms)
+
+SummerBreak
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'GPA Text') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'CourseTaken Text') is missing!
+ 
+(Filename:  Line: 1744)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.547008 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2911.
+Total: 0.917516 ms (FindLiveObjects: 0.118153 ms CreateObjectMapping: 0.088250 ms MarkObjects: 0.689231 ms  DeleteObjects: 0.021515 ms)
+
+previous gpa: 15Semester quality points: 14
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2720 -> priority: 1 
+  Thread -> id: 4498 -> priority: 1 
+  Thread -> id: 34f0 -> priority: 1 
+  Thread -> id: 32c8 -> priority: 1 
